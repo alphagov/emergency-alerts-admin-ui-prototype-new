@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="en" class="govuk-template "><head>
+    <meta charset="utf-8">
+    <title>Location – GOV.UK Emergency Alerts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="static/images/favicon.ico?de7abc5226925203ac10b0a4a94af949" type="image/x-icon">
+  <link rel="mask-icon" href="static/images/govuk-mask-icon.svg?2afd125b1db96109388d4a0727312f3e" color="#0b0c0c"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/govuk-apple-touch-icon-180x180.png?a0f7e1b728a42016b247dc54ee40d055">
+  <link rel="apple-touch-icon" sizes="167x167" href="static/images/govuk-apple-touch-icon-167x167.png?f636cb7d471fc6239d2241d75cbdabcb">
+  <link rel="apple-touch-icon" sizes="152x152" href="static/images/govuk-apple-touch-icon-152x152.png?40846d46aa37232e2b35065769ce567c">
+  <link rel="apple-touch-icon" href="static/images/govuk-apple-touch-icon.png?3c45daa1f1e716458e4da954b973002e">
+  <link rel="preload" href="static/fonts/light-94a07e06a1-v2.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="static/fonts/bold-b542beb274-v2.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" media="screen" href="static/stylesheets/main.css?04620ad39196c63dda423d7a177f4330">
+  <link rel="stylesheet" media="print" href="static/stylesheets/print.css?dca99e023ab2e434e6b5e080b0360cab">
+  <link href="/public/stylesheets/application.css" rel="stylesheet" type="text/css">
+    <link href="/public/stylesheets/application1.css" rel="stylesheet" type="text/css">
+  
+  <script src="assets/javascripts/polyfill.min.js"></script>
+  <script src="assets/javascripts/js.cookie.min.js"></script>
+
+  <script src="/public/javascripts/polyfill.min.js"></script>
+  <script src="/public/javascripts/js.cookie.min.js"></script>
+
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+  
+  <style>
+    
+.govuk-footer__copyright-logo {
+    display: inline-block;
+    min-width: 125px;
+    padding-top: 112px;
+    background-image: url(/public/images/govuk-crest-2x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 125px 102px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+  
+    .govuk-header__container { border-color: #1d70b8 }
+    nav.govuk-header__navigation { float: right }
+    .govuk-grid-column-one-third { align-items: center!important;}
+    .govuk-header__conten {
+    margin: auto!important;
+    text-align: -webkit-right;
+}
+
+</style>
+
+
+  <meta name="robots" content="noindex"> 
+  <meta name="google-site-verification" content="niWnSqImOWz6mVQTYqNb5tFK8HaKSB4b3ED4Z9gtUQ0">
+    <meta name="format-detection" content="telephone=no">  
+    <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+  </head>
+
+  <body class="govuk-template__body  js-enabled js-enabled">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+
+<header class="govuk-header " role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter">
+    <div class="govuk-header__log">
+      <a href="https://www.gov.uk/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <!--[if gt IE 8]><!-->
+          <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 97" height="30" width="36">
+            <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
+          </svg>
+          <!--<![endif]-->
+          <!--[if IE 8]>
+          <img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+          <![endif]-->
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+      <div class="govuk-grid-column-three-quarters">
+        <div class="govuk-grid-column-one-third" style="
+    padding-right: 0px;
+    padding-left: 0px;
+">
+    <div class="govuk-header__conten">
+      <a href="sign-in-author.htm" class="govuk-header__link govuk-header__service-name">
+        Emergency Alerts
+      </a>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-two-quarters">
+      <nav aria-label="Menu" class="govuk-header__navigation ">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden="" aria-expanded="false">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
+          <li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="support.htm">
+              Support
+            </a>
+          </li>
+         
+          <!--<li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+            <a class="govuk-header__link" href="support.htm">
+              Support
+            </a>
+          </li>-->
+          <!--<li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="documentation.htm">
+              Documentation
+            </a>
+          </li>-->
+          <li class="govuk-header__navigation-item">
+              
+            <a class="govuk-header__link" href="user-profile.htm">
+          
+            Profile
+          
+            </a>
+          
+        </li>
+        <li class="govuk-header__navigation-item">
+              
+          <a class="govuk-header__link" href="sign-in-author.htm">
+        
+          Sign out
+        
+          </a>
+        
+      </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+</div>
+</header>
+
+<div class="govuk-width-container">  
+  <div class="navigation-service">
+    <div class="navigation-service-name govuk-!-font-weight-bold">
+      Emergency Alerts
+      <span class="navigation-service-type navigation-service-type--training ">Training</span> 
+    </div>
+  
+    <a href="/accounts" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch">Switch service</a>
+  </div>
+  
+      <div class="govuk-grid-row govuk-!-padding-bottom-12">
+        
+          <div class="govuk-grid-column-one-quarter">
+        
+            
+  <nav class="navigation" aria-label="Service">
+    <ul>
+    
+      
+        <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline selected" href="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/current-alerts">Current alerts</a></li>
+        <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/past-alerts">Past alerts</a></li>
+        <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/rejected-alerts">Rejected alerts</a></li>
+      
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/templates">Templates</a></li>
+      
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/users">Team members</a></li>
+    
+    </ul>
+  </nav>
+  
+          </div>
+        
+
+    <div class="govuk-grid-column-three-quarters">
+      
+        
+          
+  
+      <a href="current-alerts.htm" class="govuk-back-link">Back
+      </a>
+    
+    
+            
+            <main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
+                
+   <!-- <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script> -->
+    
+
+
+
+              <form autocomplete="off" id="location-form" class="form" method="post" action="/location" novalidate="">
+    
+
+<div class="govuk-form-group">
+
+  <fieldset class="govuk-fieldset">
+  
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+  
+    <h1 class="govuk-fieldset__heading">
+     Choose where to send this alert
+    </h1>
+  
+  </legend>
+
+    <div id="event-name-hint" class="govuk-hint">
+    Select one option
+  </div>
+<div class="govuk-radios" data-module="govuk-radios">
+
+    <!--1 Postcode-->
+    
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="findby" name="findby" type="radio" value="placeOrPostcode" aria-controls="conditional-findby" aria-expanded="false">
+          <label class="govuk-label govuk-radios__label" for="findby">
+        Postcode
+      </label>
+          
+        </div>
+        
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-findby">
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label visually-hidden" for="placeOrPostcode">
+    Postcode
+  </label>
+
+
+  <div id="placeOrPostcode-hint" class="govuk-hint">
+    For example CA22 2PA
+  </div>
+<input class="govuk-input govuk-!-width-one-third" id="placeOrPostcode" name="placeOrPostcode" type="text" aria-describedby="placeOrPostcode-hint">
+</div>
+          </div>
+
+ <!--2 Latitude and longitude-->
+    <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="findby-4" name="findby" type="radio" value="latitudeLongitude" aria-controls="conditional-findby-4" aria-expanded="false">
+          <label class="govuk-label govuk-radios__label" for="findby-4">
+        Latitude and longitude
+      </label>
+          
+        </div>
+
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-findby-4">
+            
+    <div id="event-name-hint" class="govuk-hint">
+      For example 54.444173° -3.4890336°.
+    </div>
+    
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label" for="latitude">
+    Latitude
+  </label>
+
+<input class="govuk-input govuk-!-width-one-third" id="latitude" name="latitude" type="text">
+
+</div>
+
+    
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label" for="longitude">
+    Longitude
+  </label>
+
+<input class="govuk-input govuk-!-width-one-third" id="longitude" name="longitude" type="text">
+
+</div>
+          </div>    
+
+   
+    <!--3 Easting and northings-->
+        
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="findby-3" name="findby" type="radio" value="eastingNorthing" aria-controls="conditional-findby-3" aria-expanded="false">
+          <label class="govuk-label govuk-radios__label" for="findby-3">
+        Easting and northing
+      </label> 
+        </div>
+        
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-findby-3">   
+    <div id="event-name-hint" class="govuk-hint">
+      For example should only include numbers 123456.
+    </div>
+    
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label" for="easting">
+    Easting
+  </label>
+
+<input class="govuk-input govuk-!-width-one-third" id="easting" name="easting" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label" for="northing">
+    Northing
+  </label>
+
+<input class="govuk-input govuk-!-width-one-third" id="northing" name="northing" type="text">
+</div>
+</div>
+
+
+
+   
+
+
+    <!--4 other-->
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="findby-2" name="findby" type="radio" value="nationalGridReference" aria-controls="conditional-findby-2" aria-expanded="true">
+          <label class="govuk-label govuk-radios__label" for="findby-2">
+        Other
+      </label>
+        </div>
+        
+      
+        
+          <div class="govuk-radios__conditional" id="conditional-findby-2">
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label visually-hidden" for="nationalGridReference">
+    High Risk and Hazardous sites
+  </label>
+
+  <label class="govuk-label govuk-radios__label" for="findby-2" style="padding-left: 0px" ;="">
+        High Risk and Hazardous sites
+      </label>
+  
+  <div id="nationalGridReference-hint" class="govuk-hint">
+    For example Chemical, nuclear, pipelines and reservoirs
+  </div>
+
+<input class="govuk-input govuk-!-width-one-third" id="nationalGridReference" name="nationalGridReference" type="text" aria-describedby="nationalGridReference-hint">
+
+            </div>
+            <label class="govuk-label govuk-radios__label" for="findby-22" style="padding-left: 0px" ;="">
+        Local authorities
+      </label>
+      <div id="nationalGridReference-hint" class="govuk-hint">Aberdeen City, Aberdeenshire, Adur and 395 more…</div>
+<input class="govuk-input govuk-!-width-one-third" id="nationalGridReference" name="nationalGridReference" type="text" aria-describedby="nationalGridReference-hint">
+
+            <div class="govuk-radios__item" style="
+    padding-left: 0px;
+    margin-bottom: 0px;
+    height: 0px;
+">
+          <input class="govuk-radios__input" id="findby-12" name="findby" type="radio" value="localauth" aria-controls="conditional-findby-12" aria-expanded="false">
+          
+          
+        </div>
+        <label class="govuk-label govuk-radios__label" for="findby-2" style="padding-left: 0px" ;="">Countries</label>
+<div id="event-name-hint" class="govuk-hint">
+  For example England, Northern Ireland, Scotland and Wales
+</div>
+<ul class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <li class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="areas-0" name="areas" type="checkbox" value="ctry19-E92000001">
+            <label class="govuk-label govuk-checkboxes__label" for="areas-0">
+  England
+</label>
+           </li>
+           
+          <li class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="areas-1" name="areas" type="checkbox" value="ctry19-N92000002">
+            <label class="govuk-label govuk-checkboxes__label" for="areas-1">
+  Northern Ireland
+</label> 
+           </li>
+
+          <li class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="areas-2" name="areas" type="checkbox" value="ctry19-S92000003">
+            <label class="govuk-label govuk-checkboxes__label" for="areas-2">
+  Scotland
+</label>
+            </li>
+
+          <li class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="areas-3" name="areas" type="checkbox" value="ctry19-W92000004">
+            <label class="govuk-label govuk-checkboxes__label" for="areas-3">
+  Wales
+</label>
+</li>
+</ul>
+      
+        
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-findby-12">
+
+  <div id="localauth-hint" class="govuk-hint">For example, Aberdeen City, Aberdeenshire, Adur and 395 more…
+
+  </div>
+
+<input class="govuk-input govuk-!-width-one-third" id="localauth" name="localauth" type="text" aria-describedby="localauth-hint">
+
+</div>
+          
+            </div>
+            
+  
+
+
+
+         
+
+                
+                
+
+
+  <!--5 Local authorities
+      
+           <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="findby-12" name="findby" type="radio" value="localauth" aria-controls="conditional-findby-12" aria-expanded="false">
+          <label class="govuk-label govuk-radios__label" for="findby-12">
+       Local authorities
+      </label>
+          
+        </div>
+        
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-findby-12">
+
+  <div id="localauth-hint" class="govuk-hint">
+    For example, Aberdeen City, Aberdeenshire, Adur and 395 more…
+
+  </div>
+
+<input class="govuk-input govuk-!-width-one-third" id="localauth" name="localauth" type="text" aria-describedby="localauth-hint">
+
+</div>
+          </div>-->
+
+
+  
+  
+
+        
+    
+
+  <!--5 Local authorities
+      
+           <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="findby-12" name="findby" type="radio" value="localauth" aria-controls="conditional-findby-12" aria-expanded="false">
+          <label class="govuk-label govuk-radios__label" for="findby-12">
+       Local authorities
+      </label>
+          
+        </div>
+        
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-findby-12">
+
+  <div id="localauth-hint" class="govuk-hint">
+    For example, Aberdeen City, Aberdeenshire, Adur and 395 more…
+
+  </div>
+
+<input class="govuk-input govuk-!-width-one-third" id="localauth" name="localauth" type="text" aria-describedby="localauth-hint">
+
+</div>
+          </div>-->
+
+    
+ <!--6 Countries-->
+  
+</div>
+
+</fieldset>
+
+</div>
+
+<a href="CA222PA-mvp.htm" role="button" draggable="false" class="govuk-button page-footer__button" data-module="govuk-button">
+  Continue
+ </a>
+
+                  
+
+            
+</form></main></div>
+
+
+    
+  </div>
+
+                
+</div>
+
+
+                
+
+    
+<!--<button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+  Continue
+</button>-->
+
+  
+
+               <script>
+    // FCRM-3619 - Now checks the Radio for PostCode by default (to avoid errors when JS is disabled)
+    // This script unchecks the radio, when JS is enabled so the UX is the same (nothing is checked by default)
+    document.addEventListener("DOMContentLoaded", () => {
+      const radio = document.getElementById("findby")
+      if (radio) {
+        radio.checked = false
+      }
+    })
+    const form = document.getElementById('location-form')
+    if (form) {
+      form.onsubmit = () => {
+        try {
+          if (window.sessionStorage) {
+            window.sessionStorage.removeItem('polygon')
+            window.sessionStorage.removeItem('point')
+          }
+        } catch (ex) { }
+      }
+    }
+  </script>
+            
+              
+        
+
+
+        
+
+        
+        
+        <main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
+          
+      <div class="page-footer">
+
+        
+    
+          
+
+    
+
+          <!--<a href="duration-new-error.html" button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </a>-->
+        
+     
+    
+    
+      </div>
+      </main>
+    
+            
+            
+             
+        
+      
+   
+  
+
+      <footer class="govuk-footer js-footer" role="contentinfo">
+        <div class="govuk-width-container ">
+          
+          <div class="govuk-footer__meta">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+              
+                <h2 class="govuk-visually-hidden">Support links</h2>
+                
+                  <ul class="govuk-footer__inline-list">
+                    
+                      <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="/privacy">
+                          Privacy
+                        </a>
+                      </li>
+                    
+                      <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="/accessibility-statement">
+                          Accessibility statement
+                        </a>
+                      </li>
+                    
+                      <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="/features/terms">
+                          Terms of use
+                        </a>
+                      </li>
+                    
+                      <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="/cookies">
+                          Cookies
+                        </a>
+                      </li>
+                    
+                      <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="/features/security">
+                          Security
+                        </a>
+                      </li>
+                    
+                  </ul> 
+                
+                  <div class="govuk-footer__meta-custom">
+                    Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a>
+                  </div>
+                
+              <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+              </svg>
+              <span class="govuk-footer__licence-description">
+                All content is available under the
+                <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+              </span>
+            </div>
+            <div class="govuk-footer__meta-item">
+              <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+  
+  <!--[if gt IE 8]><!-->
+  <script type="text/javascript" src="/static/javascripts/all.js?193e278633771887ddf38e61d0838c4c"></script>
+  <!--<![endif]-->
+
+     <script src="/public/javascripts/core.js"></script>
+    
+      <script src="/public/all.js"></script>
+  
+  <script>
+    window
+      .GOVUKFrontend
+      .initAll()
+  </script>
+    
+  
+
+</body></html>

@@ -1,1 +1,85 @@
+{% extends "layouts/main.html" %}
 
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kits
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+
+    <h1 class="govuk-heading-xl">
+      {{ serviceName }}
+    </h1>
+    <h2 class="govuk-heading-m">Sprint 4/5!</h2>
+    
+    <h2 class="govuk-heading-m">About Emergency Alerts</h2>
+    <p><a href="/alerts" class="govuk-link">Soft Launch</a></p>
+    <p><a href="/ntm-eas-585" class="govuk-link">National Test Message In Status Box</a></p>
+    <p><a href="/ntm-eas-586" class="govuk-link">2 Current Alerts</a></p>
+    <p><a href="/ntm-eas-587" class="govuk-link">National Survey Added For 24 Hours</a></p>
+    <p><a href="/ntm-eas-588" class="govuk-link">National Survey Removed, User Feedback Uploaded</a></p>
+    
+    <h2 class="govuk-heading-m">How Emergency Alerts Work</h2>
+    <p><a href="/how-alerts-work" class="govuk-link">How Emergency Alerts Work</a></p>
+    
+    <h2 class="govuk-heading-m">Testing the Emergency Alerts System</h2>
+    <p><a href="/system-testing" class="govuk-link">How Emergency Alerts Work</a></p>
+    
+    <h2 class="govuk-heading-m">Planned Tests (static)</h2>
+    <p><a href="/planned-test-static" class="govuk-link">Planned Tests</a></p>
+    
+    <h2 class="govuk-heading-m">Planned Tests (YAML Text for MNO & Gov Service Tests)</h2>
+    <p><a href="/MNO-test" class="govuk-link">Planned Tests MNO & GOV Service Tests</a></p>
+    
+     <h2 class="govuk-heading-m">Planned Tests (YAML Text for National Test Message - Ideal Version)</h2>
+    <p><a href="/national-test-message" class="govuk-link">Planned Tests for National Test Message</a></p>
+    
+    <h2 class="govuk-heading-m">Planned Tests (With Revised YAML Text for National Test Message - Not Ideal Version)</h2>
+    <p><a href="/national-test-message-without-fix" class="govuk-link">Planned Tests for National Test Message - Hard To Read Version</a></p>
+    
+    <h2 class="govuk-heading-m">Current alerts</h2>
+    <p><a href="/current-alerts" class="govuk-link">Current alerts</a></p>
+    
+    <h2 class="govuk-heading-m">Past alerts</h2>
+    <p><a href="/past-alerts" class="govuk-link">Past alerts</a></p>
+    
+    <h2 class="govuk-heading-m">Past alerts Unique URL</h2>
+    <p><a href="/unique-url-alert" class="govuk-link">Unique URL</a></p>
+    
+    <h2 class="govuk-heading-m">Privacy notice</h2>
+    <p><a href="/privacy" class="govuk-link">Privacy notice</a></p>
+    
+    <h2 class="govuk-heading-m">Service tests (static)</h2>
+    <p><a href="/service-tests" class="govuk-link">Service tests</a></p>
+    
+    <h2 class="govuk-heading-m">Service tests (with revised YAML test for MNO tests)</h2>
+    <p><a href="/service-tests" class="govuk-link">Service tests (with revised YAML test for MNO tests)</a></p>
+    
+    
+    
+    
+    
+    
+    <h2 class="govuk-heading-m">Sprint 3</h2>
+    <p><a href="/alerts" class="govuk-link">Gov.uk/alerts - national test message</a></p>
+    <p><a href="/no-current" class="govuk-link">Gov.uk/alerts - no current alerts</a></p>
+    <p><a href="/2-current-alerts" class="govuk-link">Gov.uk/alerts - 2x current alerts</a></p>
+    <p><a href="/unique-url-alert" class="govuk-link">Unique URL alert</a></p>
+    <p><a href="/how-alerts-work" class="govuk-link">How alerts work</a></p>
+    <p><a href="/system-testing" class="govuk-link">System testing</a></p>
+    <p><a href="/service-tests" class="govuk-link">Service tests - none currently planned</a></p>
+    <p><a href="/service-tests-preview" class="govuk-link">Service tests - preview of upcoming test</a></p>
+    <p><a href="/current-alerts" class="govuk-link">Current Alerts</a></p>
+    <p><a href="past-alerts" class="govuk-link">Past Alerts</a></p>
+    <p><a href="/privacy" class="govuk-link">Privacy</a></p>
+
+    <h2 class="govuk-heading-m">Admin UI</h2>
+    <p><a href="/sign-in-all" class="govuk-link">Sign in</a></p>
+  </div>
+</div>
+
+{% endblock %}

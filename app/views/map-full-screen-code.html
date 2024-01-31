@@ -1,0 +1,89 @@
+<html><head>
+	<meta charset="utf-8">
+	<title>Leaflet.Control.FullScreen Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css">
+	<link rel="stylesheet" href="https://admin-ui-rpan.onrender.com/public/sass/Control.FullScreen.css">
+	
+	<style type="text/css">
+		#map { width: 700px; max-width: 100%; height: 433px; }
+	</style>
+
+	<script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+	<script src="https://admin-ui-rpan.onrender.com/public/javascripts/Control.FullScreen.js"></script>
+	
+
+<style id="font-changer-styles">
+    * {
+        font-family:  !important;
+        
+        
+    }
+  </style>
+
+<link class="tempLink" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family="></head>
+
+<body>
+	<div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative; outline-style: none;">
+<div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+<div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/15/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(196px, -54px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/15/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(196px, 202px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/14/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-60px, -54px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/16/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(452px, -54px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/14/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-60px, 202px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/16/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(452px, 202px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/15/12.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(196px, 458px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/14/12.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-60px, 458px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/16/12.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(452px, 458px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/15/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(196px, -310px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/13/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-316px, 202px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/17/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(708px, 202px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/15/13.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(196px, 714px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/14/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-60px, -310px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/16/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(452px, -310px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/13/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-316px, -54px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/17/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(708px, -54px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/13/12.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-316px, 458px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/17/12.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(708px, 458px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/14/13.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-60px, 714px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/16/13.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(452px, 714px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/13/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-316px, -310px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/17/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(708px, -310px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/13/13.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-316px, 714px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/17/13.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(708px, 714px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/12/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-572px, 202px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/18/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(964px, 202px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/12/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-572px, -54px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/18/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(964px, -54px, 0px); opacity: 1;"><img alt="" src="https://a.basemaps.cartocdn.com/light_all/5/12/12.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-572px, 458px, 0px); opacity: 1;"><img alt="" src="https://c.basemaps.cartocdn.com/light_all/5/18/12.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(964px, 458px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/12/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-572px, -310px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/18/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(964px, -310px, 0px); opacity: 1;"><img alt="" src="https://b.basemaps.cartocdn.com/light_all/5/12/13.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-572px, 714px, 0px); opacity: 1;"><img alt="" src="https://d.basemaps.cartocdn.com/light_all/5/18/13.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(964px, 714px, 0px); opacity: 1;"></div></div></div>
+
+<div class="leaflet-pane leaflet-overlay-pane"></div>
+<div class="leaflet-pane leaflet-shadow-pane"></div>
+<div class="leaflet-pane leaflet-marker-pane"></div>
+<div class="leaflet-pane leaflet-tooltip-pane"></div>
+<div class="leaflet-pane leaflet-popup-pane"></div>
+<div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(3994px, 2830.5px, 0px) scale(16);"></div></div>
+
+<div class="leaflet-control-container">
+<div class="leaflet-top leaflet-left">
+<div class="leaflet-control-zoom leaflet-bar leaflet-control">
+<a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a>
+<a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+<a class="leaflet-control-zoom-fullscreen fullscreen-icon" href="#" title="Show me the fullscreen !" role="button" aria-label="Show me the fullscreen !"></a>
+</div>
+</div>
+
+<div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div>
+<div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a> <span aria-hidden="true">|</span> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a></div></div></div></div>
+
+	<div style="margin:1em 0 0;">
+		<span style="padding:0 0.25em 0 0;">Demonstration of 'toggleFullscreen' method</span>
+		<button type="button" onclick="toggleFullscreen();">Show map in fullscreen mode</button>
+	</div>
+	<script>
+		var base = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			subdomains: 'abcd',
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+		});
+
+		var map = L.map('map', {
+			layers: [base],
+			tap: false, // ref https://github.com/Leaflet/Leaflet/issues/7255
+			center: new L.LatLng(48.5, -4.5),
+			zoom: 5,
+			fullscreenControl: true,
+			fullscreenControlOptions: { // optional
+				title:"Show me the fullscreen !",
+				titleCancel:"Exit fullscreen mode"
+			}
+		});
+
+		// detect fullscreen toggling
+		map.on('enterFullscreen', function(){
+			if(window.console) window.console.log('enterFullscreen');
+		});
+		map.on('exitFullscreen', function(){
+			if(window.console) window.console.log('exitFullscreen');
+		});
+
+		// toggler into fullscreen mode
+		const toggleFullscreen = function(){
+			map.toggleFullscreen();
+		}
+</script>
+
+
+</body></html>
