@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>leaflet-draw and editing geojson</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.9/leaflet.draw.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="/public/sass/map.css">
+
+<style>  
+a.leaflet-draw-draw-polyline {
+    display: none !important;
+}
+
+a.leaflet-draw-draw-rectangle {
+    display: none !important;
+}
+
+a.leaflet-draw-draw-marker {
+    display: none !important;
+}
+</style>
+
+</head>
+<body>
+
+<div id="map" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;">
+  <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+    <div class="leaflet-pane leaflet-tile-pane">
+      <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+      <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);">
+        <img alt="" role="presentation" src="http://b.tile.osm.org/5/15/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(48px, 180px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://c.tile.osm.org/5/16/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(304px, 180px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://a.tile.osm.org/5/15/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(48px, -76px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://b.tile.osm.org/5/16/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(304px, -76px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://c.tile.osm.org/5/15/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(48px, 436px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://a.tile.osm.org/5/16/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(304px, 436px, 0px); opacity: 1;">
+        <img alt="" role="presentation" src="http://a.tile.osm.org/5/14/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-208px, 180px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://a.tile.osm.org/5/17/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(560px, 180px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://c.tile.osm.org/5/14/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-208px, -76px, 0px); opacity: 1;">
+        <img alt="" role="presentation" src="http://c.tile.osm.org/5/17/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(560px, -76px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://b.tile.osm.org/5/14/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-208px, 436px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://b.tile.osm.org/5/17/11.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(560px, 436px, 0px); opacity: 1;"></div>
+      </div>
+    </div>
+    
+  
+        
+        <div class="leaflet-control-container">
+          <div class="leaflet-top leaflet-left">
+            <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+              <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+              <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">-</a></div></div>
+              
+              <div class="leaflet-top leaflet-right">
+              <div class="leaflet-draw leaflet-control">
+              <div class="leaflet-draw-section">
+              <div class="leaflet-draw-toolbar leaflet-bar leaflet-draw-toolbar-top">
+              <a class="leaflet-draw-draw-polyline" href="#" title="Draw a polyline">
+                <span class="sr-only">Draw a polyline</span></a>
+                <a class="leaflet-draw-draw-polygon" href="#" title="Draw a polygon">
+                <span class="sr-only">Draw a polygon</span></a>
+                <a class="leaflet-draw-draw-rectangle" href="#" title="Draw a rectangle"><span class="sr-only">Draw a rectangle</span></a>
+                <a class="leaflet-draw-draw-circle" href="#" title="Draw a circle">
+                  <span class="sr-only">Draw a circle</span></a>
+                  <a class="leaflet-draw-draw-marker" href="#" title="Draw a marker"><span class="sr-only">Draw a marker</span></a></div>
+                  <ul class="leaflet-draw-actions"></ul></div>
+                  <div class="leaflet-draw-section">
+                  <div class="leaflet-draw-toolbar leaflet-bar">
+                    <a class="leaflet-draw-edit-edit leaflet-disabled" href="#" title="No layers to edit.">
+                      <span class="sr-only">Edit layers.</span></a>
+                      <a class="leaflet-draw-edit-remove leaflet-disabled" href="#" title="No layers to delete."><span class="sr-only">Delete layers.</span></a></div>
+                      <ul class="leaflet-draw-actions"></ul></div></div></div>
+                      <div class="leaflet-bottom leaflet-left"></div>
+                      <div class="leaflet-bottom leaflet-right">
+                        <div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © <a href="http://osm.org/copyright">OpenStreetMap</a> contributors</div></div></div></div>
+<!-- partial -->
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.9/leaflet.draw.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/public/javascripts/map.js"></script>
+
+
+</body></html>
+  </html>
+
+
+
+
