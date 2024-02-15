@@ -129,6 +129,23 @@ nav.govuk-header__navigation {
     float: right;
 }
 
+.govuk-grid-column-full {
+    box-sizing: border-box;
+    width: 100%;
+    /* padding: 0 15px; */
+}
+
+  .govuk-grid-row {
+    margin-right: -15px;
+    /* margin-left: -15px; */
+}
+    
+ .govuk-grid-column-one-half-right {
+    /* width: 50%; */
+    float: right;
+}
+    
+
   </style>
   
   <meta name="google-site-verification" content="niWnSqImOWz6mVQTYqNb5tFK8HaKSB4b3ED4Z9gtUQ0">
@@ -351,15 +368,20 @@ nav.govuk-header__navigation {
         <a class="file-list-filename-large govuk-link govuk-link--no-visited-state" href="live-alert-preview-user1.html"> Sellafield</a>
       </h2>
 
-      <p class="govuk-body live-broadcast file-list-status">
-          
-  <strong class="govuk-tag govuk-!-margin-right-2 broadcast-tag">
-  live
-</strong>
 
-
-          since today at 12:20pm
-        </p>
+      <div class="govuk-grid-row govuk-grid-column-full">
+  <div class="govuk-grid-column-one-half">
+    <p class="govuk-body live-broadcast file-list-status">
+      <strong class="govuk-tag govuk-!-margin-right-2 broadcast-tag">
+      live</strong>since today at 12:20pm</p>
+  </div>
+  <div class="govuk-grid-column-one-half-right">
+    <a href="past-alerts-new" role="button" draggable="false" class="govuk-button govuk-button--warning" data-module="govuk-button" style="padding-top: 8px;margin-top: 12px;">
+      Stop alert
+    </a>
+  </div>
+</div>
+      
       
       <span class="file-list-hint-large govuk-!-margin-bottom-2">
         This is an emergency alert issued by Cumbria Fire Service regarding Sellafield at 12:30PM on 
