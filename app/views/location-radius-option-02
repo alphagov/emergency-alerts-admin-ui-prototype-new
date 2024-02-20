@@ -274,6 +274,35 @@
                   </form>
 
 
+<label for="postcode" class="gem-c-label govuk-label">Add radius area </label>
+
+<label for="postcode" class="gem-c-label govuk-label">Enter a broadcast radius in kilometres.</label>
+
+<div id="hint-d53fa093" class="gem-c-hint govuk-hint">For example 10km</div>
+
+<div class="govuk-form-group">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="radius" name="radius" type="number" spellcheck="false" placeholder="Radius">
+      <div class="govuk-input__suffix" aria-hidden="true">km</div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <a href="map-user1.html" role="button" draggable="false" class="govuk-button govuk-button--secondary page-footer__button" data-module="govuk-button">
+      Add radius area 
+     </a>
+  </div>
+</div>
+
+
+
+
+
 
             <button type="submit" class="govuk-button">Continue</button>
                   
