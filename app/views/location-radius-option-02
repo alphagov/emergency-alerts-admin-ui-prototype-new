@@ -257,7 +257,7 @@
                   </label>
                   </h1>
               
-                 <label for="postcode" class="gem-c-label govuk-label">Enter the postcode for the alert.</label>
+                 <label for="postcode" class="gem-c-label govuk-label">Enter a postcode</label>
                 
                 <div id="hint-d53fa093" class="gem-c-hint govuk-hint">For example SW1A 2AS</div>
 
@@ -265,26 +265,17 @@
 </div>
 
                <!--<button class="gem-c-button govuk-button gem-c-button--bottom-margin" type="submit">Find</button>-->
-
-
-              
-                <!--<div id="location-hint" class="govuk-hint">
-                  In England, Northern Ireland, Scotland and Wales, for example SW1A 2AS.
-                </div>-->
-              
-              <!--<input class="govuk-input govuk-!-width-one-half" id="location" name="location" type="text" aria-describedby="location-hint" maxlength="200" spellcheck="false" data-gtm-form-interact-field-id="0">
-              </div>-->
-              
-                    <!--<button type="submit" class="govuk-button">Continue</button>-->
-                    <a href="map-user1.html" role="button" draggable="false" class="govuk-button page-footer__button" data-module="govuk-button">
-                      Find
+          
+  
+                    <a href="map-user1.html" role="button" draggable="false" class="govuk-button page-footer__button govuk-button--secondary" data-module="govuk-button">
+                      Find postcode
                      </a>
 
                   </form>
 
 
 
-          
+            <button type="submit" class="govuk-button">Continue</button>
                   
                  <!--<main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
   
