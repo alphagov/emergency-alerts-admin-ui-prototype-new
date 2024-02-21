@@ -95,6 +95,13 @@
       <nav aria-label="Menu" class="govuk-header__navigation ">
         <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden="">Menu</button>
         <ul id="navigation" class="govuk-header__navigation-list">
+
+              <li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="home-new" target="_blank">
+              Home
+            </a>
+          </li>
+              
           <li class="govuk-header__navigation-item">
             <a class="govuk-header__link" href="service-support.htm">
               Support
@@ -163,7 +170,11 @@
     <div class="govuk-grid-row govuk-!-padding-bottom-12">
 
 <div class="govuk-grid-column-one-quarter">
-    <p></p>
+    <nav class="navigation" aria-label="Service">
+  <ul>
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new">Home </a></li>
+  </ul>
+</nav>
   </div>
       
 
@@ -240,8 +251,8 @@
                 const 
           direction = 
             {
-            Option1: '/map',
-            Option2: 'https://admin-ui-rpan.onrender.com/high-risk-rework',
+            Option1: 'new-alert-message-user-1',
+            Option2: 'new-alert-message-user-1',
             Option3: 'https://admin-ui-rpan.onrender.com/libraries-mvp-1-2-order-user-1',
             }
         , myForm = document.getElementById('my-form')
