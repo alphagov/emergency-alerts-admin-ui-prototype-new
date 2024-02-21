@@ -46,6 +46,13 @@
 
 
         <style>
+
+            .navigation-service-type--live {
+    background: #d4351c;
+    color: #ffffff;
+    box-shadow: 0 -3px 0 0 #d4351c;
+}
+            
             .govuk-button--secondary,
             .govuk-button--secondary:link,
             .govuk-button--secondary:visited,
@@ -165,6 +172,13 @@
                             <button type="button" class="govuk-header__menu-button govuk-js-header-toggle"
                                 aria-controls="navigation" aria-label="Show or hide menu" hidden="">Menu</button>
                             <ul id="navigation" class="govuk-header__navigation-list">
+
+                                <li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="home-new-live.htm">
+              Home
+            </a>
+          </li>
+                                
                                 <li class="govuk-header__navigation-item">
                                     <a class="govuk-header__link" href="service-support.htm">
                                         Support
@@ -196,8 +210,8 @@
         <div class="navigation-service">
             <div class="navigation-service-name govuk-!-font-weight-bold">
                 Emergency Alerts
-                <span class="navigation-service-type navigation-service-type--training ">
-                    Training
+                <span class="navigation-service-type navigation-service-type--live">
+                    Live
                 </span>
             </div>
 
@@ -209,8 +223,12 @@
 
         <body>
             <div>
-                <a href="service-ui-user-1" class="govuk-back-link">Home</a>
-
+                <!--<a href="service-ui-user-1" class="govuk-back-link">Home</a>-->
+<nav class="navigation" aria-label="Service">
+  <ul>
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home </a></li>
+  </ul>
+</nav>
                 <a href="lib-three-radios" class="govuk-back-link">Back</a>
                 <!--<span class="govuk-caption-l">Step 3 of 6</span>-->
                 <h1 class="govuk-heading-l">Choose a location</h1>
