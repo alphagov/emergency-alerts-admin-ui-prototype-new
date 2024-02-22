@@ -166,7 +166,15 @@ nav.govuk-header__navigation {
     float: right;
 }
     
+p.govuk-body.live-broadcast.file-list-status {
+    color: #d4351c!important;
+}
 
+    .govuk-tag.broadcast-tag {
+    background-color: #d4351c!important;
+}
+    
+    
   </style>
   
   <meta name="google-site-verification" content="niWnSqImOWz6mVQTYqNb5tFK8HaKSB4b3ED4Z9gtUQ0">
@@ -260,22 +268,21 @@ nav.govuk-header__navigation {
         <nav aria-label="Menu" class="govuk-header__navigation ">
           <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden="" aria-expanded="false">Menu</button>
           <ul id="navigation" class="govuk-header__navigation-list">
+
+
+          <li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="home-new-live.htm">
+              Home
+            </a>
+          </li>
+            
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="support.htm">
                 Support
               </a>
             </li>
            
-            <!--<li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-              <a class="govuk-header__link" href="support.htm">
-                Support
-              </a>
-            </li>-->
-            <!--<li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="documentation.htm">
-                Documentation
-              </a>
-            </li>-->
+          
             <li class="govuk-header__navigation-item">
                 
               <a class="govuk-header__link" href="user-profile.htm">
@@ -315,7 +322,7 @@ nav.govuk-header__navigation {
       
   
   
-    <span class="navigation-service-type navigation-service-type--training ">Training
+    <span class="navigation-service-type navigation-service-type--live">Live
   
   </span>
 
@@ -333,7 +340,7 @@ nav.govuk-header__navigation {
 <nav class="navigation" aria-label="Service">
   <ul>
   
-    
+    <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home</a></li>
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline selected" href="continue-CA222PA">Current alerts</a></li>
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="past-alerts-new">Past alerts</a></li>
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="rejected-alerts">Rejected alerts</a></li>
