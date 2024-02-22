@@ -126,6 +126,18 @@ path.leaflet-interactive {
             .leaflet-tooltip-right:before {
                 border: none !important;
             }
+
+            .navigation-service-type--live {
+    background: #d4351c;
+    color: #ffffff;
+    box-shadow: 0 -3px 0 0 #d4351c;
+}
+
+          a.govuk-back-link {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+}
+        
         </style>
         <meta name="robots" content="noindex">
         <meta name="google-site-verification" content="niWnSqImOWz6mVQTYqNb5tFK8HaKSB4b3ED4Z9gtUQ0">
@@ -178,6 +190,13 @@ path.leaflet-interactive {
                             <button type="button" class="govuk-header__menu-button govuk-js-header-toggle"
                                 aria-controls="navigation" aria-label="Show or hide menu" hidden="">Menu</button>
                             <ul id="navigation" class="govuk-header__navigation-list">
+
+                                <li class="govuk-header__navigation-item">
+            <a class="govuk-header__link" href="home-new-live.htm">
+              Home
+            </a>
+          </li>
+                                
                                 <li class="govuk-header__navigation-item">
                                     <a class="govuk-header__link" href="service-support.htm">
                                         Support
@@ -209,8 +228,8 @@ path.leaflet-interactive {
         <div class="navigation-service">
             <div class="navigation-service-name govuk-!-font-weight-bold">
                 Emergency Alerts
-                <span class="navigation-service-type navigation-service-type--training ">
-                    Training
+                <span class="navigation-service-type navigation-service-type--live">
+                    Live
                 </span>
             </div>
 
@@ -222,10 +241,14 @@ path.leaflet-interactive {
 
         <body>
             <div>
-                <a href="service-ui-user-1" class="govuk-back-link">Home</a>
+               <nav class="navigation" aria-label="Service">
+  <ul>
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home </a></li>
+  </ul>
+</nav>
 
                 <a href="lib-three-radios" class="govuk-back-link">Back</a>
-                <span class="govuk-caption-l">Step 3 of 6</span>
+               <!--<span class="govuk-caption-l">Step 3 of 6</span>-->
                 <h1 class="govuk-heading-l">Choose a location</h1>
                 <main class="govuk-main-wrapper">
                     <div class="govuk-grid-row">
