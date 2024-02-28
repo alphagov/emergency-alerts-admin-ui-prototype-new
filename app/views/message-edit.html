@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="govuk-template ">
-  <head>
+<html lang="en" class="govuk-template "><head>
     <meta charset="utf-8">
     <title>New alert 1 – Emergency Alerts – GOV.UK
 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c">
+    <meta name="theme-color" content="#0b0c0c"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="static/images/favicon.ico?de7abc5226925203ac10b0a4a94af949" type="image/x-icon">
   <link rel="mask-icon" href="static/images/govuk-mask-icon.svg?2afd125b1db96109388d4a0727312f3e" color="#0b0c0c"> 
@@ -17,15 +16,27 @@
   <link rel="preload" href="static/fonts/bold-b542beb274-v2.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" media="screen" href="static/stylesheets/main.css?04620ad39196c63dda423d7a177f4330">
   <link rel="stylesheet" media="print" href="static/stylesheets/print.css?dca99e023ab2e434e6b5e080b0360cab">
-  <link href="/public/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  <link href="/public/stylesheets/application.css" rel="stylesheet" type="text/css">
 
+    
   <style>
+
+    .navigation-service-type--live {
+    background: #d4351c;
+    color: #ffffff;
+    box-shadow: 0 -3px 0 0 #d4351c;
+}
+    
+    a.govuk-back-link {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+}
 
     .govuk-header__conten {
     margin: auto!important;
     text-align: -webkit-left!important;
 }
-
+    
     h4#text-inputs-with-a-prefix {
     font-weight: 700;
     margin-bottom: 5px;
@@ -43,7 +54,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
+    
     /*.govuk-header__container { border-color: #81878b }*/
     .govuk-header__container { border-color: #1d70b8 }
     nav.govuk-header__navigation { float: right }
@@ -52,28 +63,16 @@
     margin: auto!important;
     text-align: -webkit-right;
 }
-
-    a.govuk-back-link {
-    font-size: 1.1875rem;
-    line-height: 1.3157894737;
-}
-
-    .navigation-service-type--live {
-    background: #d4351c;
-    color: #ffffff;
-    box-shadow: 0 -3px 0 0 #d4351c;
-}
 </style>
-
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex"> 
   <meta name="google-site-verification" content="niWnSqImOWz6mVQTYqNb5tFK8HaKSB4b3ED4Z9gtUQ0">
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no">  
     <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
   </head>
 
-  <body class="govuk-template__body ">
+  <body class="govuk-template__body  js-enabled">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-
+    
 <header class="govuk-header " role="banner" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="govuk-grid-row">
@@ -111,27 +110,41 @@
 
     <div class="govuk-grid-column-two-quarters">
       <nav aria-label="Menu" class="govuk-header__navigation ">
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden="">Menu</button>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu" hidden="" aria-expanded="false">Menu</button>
         <ul id="navigation" class="govuk-header__navigation-list">
-           <li class="govuk-header__navigation-item">
+
+
+          <li class="govuk-header__navigation-item">
             <a class="govuk-header__link" href="home-new-live">
               Home
             </a>
           </li>
+
+          
           <li class="govuk-header__navigation-item">
             <a class="govuk-header__link" href="service-support.htm">
               Support
             </a>
           </li>
+         
+
           <li class="govuk-header__navigation-item">
+              
             <a class="govuk-header__link" href="/user-profile">
+          
             Profile
+          
             </a>
+          
         </li>
         <li class="govuk-header__navigation-item">
+              
           <a class="govuk-header__link" href="sign-in-author.htm">
+        
           Sign out
+        
           </a>
+        
       </li>
         </ul>
       </nav>
@@ -142,21 +155,28 @@
 </header>
 
 <div class="govuk-width-container">
+    
   <div class="navigation-service">
+    
+     
     <div class="navigation-service-name govuk-!-font-weight-bold">
       Emergency Alerts
+      
       <span class="navigation-service-type navigation-service-type--live">Live
+    
     </span>
+  
+      
     </div>
 
+    
     <a href="/accounts" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch">Switch service</a>
   </div>
-
+  
       <div class="govuk-grid-row govuk-!-padding-bottom-12">
 
-
-
- <div class="govuk-grid-column-one-quarter">
+       
+  <div class="govuk-grid-column-one-quarter">
     <nav class="navigation" aria-label="Service">
   <ul>
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home </a></li>
@@ -164,45 +184,53 @@
 </nav>
   </div>
 
+    
 <div class="govuk-grid-column-three-quarters">
 
- <!--<a href="service-ui-user-1" class="govuk-back-link">Home
-  </a>-->
+  
   <a href="service-ui-user-1" class="govuk-back-link">Back
   </a>
 
-
+      
         <main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
+        
+
+  <!--<h1 class="heading-large" id="page-header">New alert message</h1>-->
 
 <!--<span class="govuk-caption-l">Step 1 of 6</span>-->
 <h1 class="govuk-heading-l">
   New alert message
 </h1>
 
+  
   <form method="post" autocomplete="off" novalidate="">
-
+    
     <div class="govuk-grid-row">
-      
       <div class="govuk-grid-column-two-thirds">
-
+        
 
 
 <div class="govuk-form-group">
   <h4 id="text-inputs-with-a-prefix">Reference</h4>
   <div id="name-hint" class="govuk-hint">
-    Your recipients will not see this
+    The people who get this message will not see the reference.
   </div>
 
-<input class="govuk-input govuk-!-width-full" id="name" name="name" type="text" aria-describedby="name-hint" value="Walthamstow Reservoirs 27022024
-">
+<input class="govuk-input govuk-!-width-full" id="name" name="name" type="text" aria-describedby="name-hint" value="Walthamstow Reservoirs 2702202">
 </div>
-
-
-<div class="form-group govuk-!-margin-bottom-2" data-notify-module="">
+        
+  <div class="form-group govuk-!-margin-bottom-2" data-notify-module="">
     <h4 id="text-inputs-with-a-prefix">Alert message</h4>
-    <div class="textbox-highlight-wrapper"><textarea class="form-control form-control-1-1 textbox-highlight-textbox" data-highlight-placeholders="false" data-notify-module="enhanced-textbox" id="template_content" name="template_content" rows="5" aria-describedby="update-status" style="height: 185px;">
+    <!--<div id="name-hint" class="govuk-hint">
+    Please copy and paste directly from proforma to avoid any formatting issues.
+  </div>-->
 
-This is an emergency alert issued by London Fire Service regarding severe flooding at Walthamstow Reservoirs at 12:30PM on 27 Feb 2024.
+    <div id="name-hint" class="govuk-hint">
+    Paste (Ctrl+V) the alert message from your request template.
+  </div>
+    
+    
+    <div class="textbox-highlight-wrapper"><div class="textbox-highlight-wrapper"><textarea class="form-control form-control-1-1 textbox-highlight-textbox" data-highlight-placeholders="false" data-notify-module="enhanced-textbox" id="template_content" name="template_content" rows="5" aria-describedby="update-status update-status" style="height: 735px;" value="This is an emergency alert issued by London Fire Service regarding severe flooding at Walthamstow Reservoirs at 12:30PM on 28 Feb 2024.
 
 Due to heavy rain and the failure of a reservoir wall, a large volume of flood water is overtopping the reservoirs at Forest Rd, N17 9NH.
 
@@ -216,75 +244,100 @@ Listen to BBC Radio London 94.9 FM for further information.
 
 If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’, read it now.
 
-https://check-for-flooding.service.gov.uk/plan-ahead-for-flooding</div>
-</div>
+https://check-for-flooding.service.gov.uk/plan-ahead-for-flooding"></textarea><div class="textbox-highlight-background" aria-hidden="true" style="border-width: 2px; width: 465px;">This is an emergency alert issued by London Fire Service regarding severe flooding at Walthamstow Reservoirs at 12:30PM on 28 Feb 2024.
 
+Due to heavy rain and the failure of a reservoir wall, a large volume of flood water is overtopping the reservoirs at Forest Rd, N17 9NH.
 
+The water is flowing outwards at speed into a wide area. The flood waters are deep (4-6 feet) and moving fast.
 
+If you are within the N15, N16, N17, E5, E10 or E17 postcode areas, you must go indoors and shelter now.
+
+Close windows and doors and block any other routes through which water may enter. If you can, turn off your electricity and gas supplies. If possible, go to an upper floor. Await further instructions from the emergency services.
+
+Listen to BBC Radio London 94.9 FM for further information.
+
+If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’, read it now.
+
+https://check-for-flooding.service.gov.uk/plan-ahead-for-flooding</div></div><div class="textbox-highlight-background" aria-hidden="true" style="border-width: 2px; width: 452.99px;"></div></div>
+    
+    
   </div>
 
       </div>
-
-
       <div class="govuk-grid-column-full">
         <div class="template-content-count">
           <div data-notify-module="update-status" data-target="template_content" data-updates-url="/services/b81242cc-5756-4a88-a0aa-afa6411c28e2/templates/count-broadcast-length" aria-live="polite" id="update-status"><span>
   You have 1,395 characters remaining
 </span></div>
         </div>
-
+        
   <div class="page-footer">
+    
       <input type="hidden" name="csrf_token" value="ImFmZDI4NmQxYmMxNGI0ODRmYzQ4MzQ4YThjYTliMDA0ZTZjYzljY2Ui.ZSPM6Q.5O3-4oH9eM92MxT-OzY4ghCbNSA">
+
        <a href="check-answers-edit" role="button" draggable="false" class="govuk-button page-footer__button" data-module="govuk-button">
-  Preview alert
+  Continue
  </a>
+      
+      
   </div>
       </div>
-
     </div>
-
   </form>
         </main>
       </div>
       </div>
+    </div>
 
+  
     <footer class="govuk-footer js-footer" role="contentinfo">
       <div class="govuk-width-container ">
+        
         <div class="govuk-footer__meta">
           <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+            
               <h2 class="govuk-visually-hidden">Support links</h2>
+              
                 <ul class="govuk-footer__inline-list">
+                  
                     <li class="govuk-footer__inline-list-item">
                       <a class="govuk-footer__link" href="/privacy">
                         Privacy
                       </a>
                     </li>
+                  
                     <li class="govuk-footer__inline-list-item">
                       <a class="govuk-footer__link" href="/accessibility-statement">
                         Accessibility statement
                       </a>
                     </li>
+                  
                     <li class="govuk-footer__inline-list-item">
                       <a class="govuk-footer__link" href="/features/terms">
                         Terms of use
                       </a>
                     </li>
+                  
                     <li class="govuk-footer__inline-list-item">
                       <a class="govuk-footer__link" href="/cookies">
                         Cookies
                       </a>
                     </li>
+                  
                     <li class="govuk-footer__inline-list-item">
                       <a class="govuk-footer__link" href="/features/security">
                         Security
                       </a>
                     </li>
+                  
                 </ul>
-
+              
+              
                 <div class="govuk-footer__meta-custom">
                   Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a>
                 </div>
-
+              
+            
             <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
               <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
             </svg>
@@ -300,9 +353,12 @@ https://check-for-flooding.service.gov.uk/plan-ahead-for-flooding</div>
       </div>
     </footer>
 
+
+  
   <!--[if gt IE 8]><!-->
   <script type="text/javascript" src="https://admin-ui-rpan.onrender.com/public/javascripts/all-new.js"></script>
   <!--<![endif]-->
 
-  </body>
+
+</body>
 </html>
