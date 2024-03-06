@@ -13238,9 +13238,60 @@ div#area-list-mp {
   </button>
 </div>
 
-       <p class="govuk-body">
+
+       <div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+     <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Reject this alert
+    </span>
+  </summary>
+  <!--<div class="govuk-details__text">
+    We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot provide your nationality, you’ll have to send copies of identity documents through the post.
+  </div>-->
+      
+      
+
+<div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+      Give a reason for rejecting alert
+    </label>
+    </h1>
+  <div id="more-detail-hint" class="govuk-hint">
+    Detailed reason of why the alert was rejected and how it may be reworked, for example Alert message has spelling mistakes. 
+  </div>
+  <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+</div>
+
+
+  
+
+      <form action="/form-handler" method="post" novalidate="">
+      
+
+<!--<button class="govuk-button govuk-button--warning" data-module="govuk-button">
+  Reject alert
+</button>-->
+
+        
+<a href="rejected-alerts" role="button" draggable="false" class="govuk-button govuk-button--warning" data-module="govuk-button">
+Reject alert
+</a>
+
+
+        
+
+  </form>
+      
+</details>
+  </div>
+</div>
+
+       
+       <!--<p class="govuk-body">
   <a href="#" class="govuk-link">Reject this alert</a>
-</p>
+</p>-->
        
        
        
