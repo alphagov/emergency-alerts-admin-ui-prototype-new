@@ -29,6 +29,19 @@
   
    <style>
 
+       .govuk-link:visited {
+    color: #1d70b8;
+}
+
+
+
+.right {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+       
+
        a.govuk-link.govuk-link--no-visited-state {
     font-weight: 400;
     font-size: 18.5px !important;
@@ -12935,7 +12948,7 @@ div#area-list-mp {
     <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
   </head>
   
-  <body class="govuk-template__body  js-enabled">
+  <body class="govuk-template__body  js-enabled js-enabled">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     
   <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -13234,9 +13247,14 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
            100,000 to 120,000 phones
           
         </p></div>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="map">Change<span class="govuk-visually-hidden">Change</span></a>
-            </dd>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full right">
+    <a class="govuk-link" href="map">Change<span class="govuk-visually-hidden">Change</span></a>
+  </div>
+</div>
+           
+    
 
       
       </div>
@@ -13407,5 +13425,6 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
   <!--<![endif]-->
 
   
+
 
 </body></html>
