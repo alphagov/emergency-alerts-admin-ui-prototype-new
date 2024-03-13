@@ -254,14 +254,66 @@ a.govuk-back-link {
 <div class="govuk-grid-column-three-quarters">
 
 <h1 class="govuk-heading-l">Emergency alerts</h1>
-  <h1 class="heading-medium">Emergency alerts</h1>
+  <h1 class="heading-medium">Actions</h1>
+  <div id="changed-name-hint" class="govuk-hint">
+          Create a new alert from scratch or use a template.
+            
+          </div>
+  <hr>
+  
+  <div class="govuk-!-padding-top-4" <div="" data-notify-module="update-content" data-resource="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/broadcast-dashboard.json" data-key="current_broadcasts" data-form="">
 
-  <a class="govuk-button govuk-button--start" data-module="govuk-button" draggable="false" role="button" href="/forms/new">Create an alert<svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a>
+      <div class="ajax-block-container js-mark-focus-on-parent" data-classes-to-persist="js-child-has-focus">
+        
+    <!--<div class="js-stick-at-bottom-when-scrolling">
+<a href="template-create-journey" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Create new alert
+</a>
+    </div>-->
+
+<div class="govuk-button-group">
+
+<a class="govuk-button govuk-button--start" data-module="govuk-button" draggable="false" role="button" href="/forms/new">Create an alert<svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a>
+
+ <!--<a href="new-alert-message-user-1" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Create an alert
+</a>-->
+   <a href="template" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Templates
+</a>
+</div>
+
+  
+      </div>
+            </div>
+
+  
+<hr>
+  
+  <!--<a class="govuk-button govuk-button--start" data-module="govuk-button" draggable="false" role="button" href="/forms/new">Create an alert<svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a>-->
 
  <table class="govuk-table"><caption class="govuk-table__caption govuk-table__caption--m">Your alerts</caption>
-   <thead class="govuk-table__head"><tr class="govuk-table__row"><th class="govuk-table__header" scope="col">Alert name</th>
-     <th class="govuk-table__header govuk-table__header--numeric" scope="col">Status</th></tr></thead><tbody class="govuk-table__body"><tr class="govuk-table__row"><td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">juggling licence</a></td><td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--yellow">Draft</strong>
-</div></td></tr></tbody></table>
+   
+ <thead class="govuk-table__head"><tr class="govuk-table__row"><th class="govuk-table__header" scope="col">Alert name</th>
+
+   <th class="govuk-table__header govuk-table__header--numeric" scope="col">Status</th></tr></thead><tbody class="govuk-table__body"><tr class="govuk-table__row">
+     
+     <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Walthamstow Reservoirs 27022024</a></td>
+     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--red">Live</strong>
+
+ <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Walthamstow Reservoirs 28022024</a></td>
+     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--green">Needs approval</strong>
+
+        <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Walthamstow Reservoirs 28022024</a></td>
+     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--orange">Amends needed</strong>
+
+       
+       
+</div>
+     </td>
+   </tr>
+   </tbody>
+ </table>
   
 
   </div>
