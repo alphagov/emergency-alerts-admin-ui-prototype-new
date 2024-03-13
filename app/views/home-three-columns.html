@@ -195,7 +195,8 @@ a.govuk-back-link {
 
 <main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
 
-<h1 class="heading-medium">Emergency alerts</h1>
+<h1 class="govuk-heading-l">Emergency alerts</h1>
+<!--<h1 class="heading-medium">Emergency alerts</h1>-->
 
 <div class="ajax-block-container">
 <div class="govuk-grid-row">
@@ -203,8 +204,8 @@ a.govuk-back-link {
 <span class="big-number-with-status">
 <a class="govuk-link govuk-link--inverse big-number-link" href="/services/09669d05-4d2e-4d9d-a803-b665c102c39c/notifications/email?status=sending,delivered,failed">
 <span class="big-number-smaller">
-    <span class="big-number-number">107</span>
-    <span class="big-number-label">emails sent</span>
+    <span class="big-number-number">2</span>
+    <span class="big-number-label">Waiting for approval</span>
     </span>
 </a>
 </span>
@@ -214,8 +215,8 @@ a.govuk-back-link {
 <span class="big-number-with-status">
 <a class="govuk-link govuk-link--inverse big-number-link" href="">
   <span class="big-number-smaller">
-    <span class="big-number-number">34</span>
-    <span class="big-number-label">text messages sent</span>
+    <span class="big-number-number">1</span>
+    <span class="big-number-label">Amends needed</span>
       </span>
 </a>
 </span>
@@ -225,8 +226,8 @@ a.govuk-back-link {
 <span class="big-number-with-status">
 <a class="govuk-link govuk-link--inverse big-number-link" href="">
   <span class="big-number-smaller">
-    <span class="big-number-number">0</span>
-    <span class="big-number-label">letters sent</span>
+    <span class="big-number-number">1</span>
+    <span class="big-number-label">Current alerts</span>
      </span>
 </a>
 </span>
@@ -234,6 +235,44 @@ a.govuk-back-link {
 </div>
 </div>
 </div>
+
+<h1 class="heading-medium">Actions </h1>
+
+<div id="changed-name-hint" class="govuk-hint">
+          Create a new alert from scratch or use a template.
+            
+          </div>
+<hr>
+
+
+<div class="govuk-!-padding-top-4" <div="" data-notify-module="update-content" data-resource="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/broadcast-dashboard.json" data-key="current_broadcasts" data-form="">
+
+      <div class="ajax-block-container js-mark-focus-on-parent" data-classes-to-persist="js-child-has-focus">
+        
+    <!--<div class="js-stick-at-bottom-when-scrolling">
+<a href="template-create-journey" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Create new alert
+</a>
+    </div>-->
+
+<div class="govuk-button-group">
+
+<a class="govuk-button govuk-button--start" data-module="govuk-button" draggable="false" role="button" href="/forms/new">Create an alert<svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a>
+
+ <!--<a href="new-alert-message-user-1" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+  Create an alert
+</a>-->
+   <a href="template" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Templates
+</a>
+</div>
+
+  
+      </div>
+            </div>
+
+  
+  
     </main>
   </div>
     </div>
