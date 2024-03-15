@@ -26,10 +26,6 @@
   
    <style>
 
-     .govuk-details__text {
-    border-left: 0px!important;
-}
-     
   
      
      a.govuk-link.govuk-link--no-visited-state {
@@ -88,7 +84,9 @@
 }
 
 
-  
+     .govuk-details__text {
+    margin-bottom: 20px;
+}
      
      area-list-map-details .govuk-details__text {
     padding: 0;
@@ -2615,7 +2613,8 @@ input:focus,textarea:focus {
 .govuk-details__text {
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 0px;
+    padding-left: 20px;
+    border-left: 5px solid #b1b4b6
 }
 
 .govuk-details__text p {
@@ -12929,10 +12928,7 @@ div#area-list-mp {
     color: #ffffff;
     box-shadow: 0 -3px 0 0 #d4351c;
 }
-
-iframe {
-    margin-bottom: 15px!important;
-}     
+     
     
 </style>
   
@@ -13151,84 +13147,43 @@ iframe {
       
         <div class="govuk-grid-column-three-quarters">
       
+        <!--<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="service-ui-user-1">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="new-alert-message-user-1">Message</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="libraries-mvp-1-2-order-user-1">Area</a>
+    </li>
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="postcode-user-1">Postcode</a>
+    </li>
+      <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="map-user1">Coverage</a>
+    </li>
+      <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="duration-user1">Duration</a>
+    </li>
+      <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="preview-alert-user1">Preview</a>
+    </li>
+  </ol>
+</div>-->
+          
+          <!--<a href="service-ui-user-1" class="govuk-back-link">Home
+  </a>-->
+  
   <a href="map" class="govuk-back-link">Back
   </a>
 
+
+        
         <main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
        <!--<span class="govuk-caption-l">Step 5 of 6</span-->
           <h1 class="heading-large" id="page-header">Preview alert</h1>
-
-          <!--<div class="govuk-!-margin-bottom-3"><p class="govuk-!-margin-right-2 area-list"><strong>Map:</strong></p></div>-->
-        
-      <div class="govuk-details__text">
-
-<div.ex2>
-  <iframe style="border: 0px solid rgba(0, 0, 0, 0); overflow: hidden;" width="708" height="277" src="https://admin-ui-rpan.onrender.com/public/images/walthamstow-708.png"></iframe>
-       </div.ex2> 
-
-        <div class="govuk-!-margin-bottom-3">
-        <p id="area-list-map__description" class="govuk-visually-hidden">Use the arrow keys to move the map. Use the buttons to zoom the map in or out</p>
-        <p class="area-list-key area-list-key--certain">
-          <svg class="area-list-key__icon" width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>
-            <polygon points="25 5, 45 25, 25 45, 5 25" stroke="#0B0B0C" stroke-width="2" fill="#96C6E2"></polygon>
-          </svg>
-          <span class="govuk-visually-hidden">
-            An area of 2 square miles&nbsp;
-          </span>
-          Will get
-          <span class="govuk-visually-hidden">
-            the
-          </span>
-          alert
-        </p>
-        <p class="area-list-key area-list-key--likely">
-
-          <svg class="area-list-key__icon" width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>
-            <polygon points="25 5, 45 25, 25 45, 5 25" stroke="#1d70b8" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="4,7.5,5,7.5,8,8,5,8,7.5,8,5,8,7,8,5,8,4" fill="#5694ca" fill-opacity="0.15"></polygon>
-          </svg>
-
-          <span class="govuk-visually-hidden">
-            An extra area of 2,000 square miles is&nbsp;
-          </span>
-          Likely to get
-          <span class="govuk-visually-hidden">
-            the
-          </span>
-          alert
-        </p>
-        <p class="area-list-key area-list-key--phone-estimate">
-          
-           100,000 to 120,000 phones
-          
-        </p></div>
-         
-       </div>
-
-          <div>
-      <p class="govuk-!-margin-right-2 area-list"><strong>Area:</strong></p>
-      <ul class="area-list">
-        
-          <li class="area-list-item area-list-item--unremoveable">
-            N17 9NH
-          </li>
-         <li class="area-list-item area-list-item--unremoveable">
-            Walthamstow Reservoirs
-          </li>
-        
-      </ul>
-    </div>
-<div class="area-list-map-details">
-    
-      
-      <div class="govuk-!-margin-bottom-3"><p class="govuk-!-margin-right-2 area-list"><strong>Radius area:</strong> 3km</p></div>
-
-    
-
-      
-      </div>
-          
 
  <!--<p class="govuk-body govuk-!-margin-bottom-2 live-broadcast live-broadcast--left">
         
@@ -13361,7 +13316,7 @@ iframe {
         Emergency alert
       </h2>
 
-    This is an emergency alert issued by London Fire Service regarding severe flooding at Walthamstow Reservoirs at 12:30PM on 28 Feb 2024.
+    This is an emergency alert issued by London Fire Service regarding severe flaoding at Walthamstow Reservoirs at 12:30PM on 28 Feb 2024.
     <br><br>
 Due to heavy rain and the failure of a reservoir wall, a large volume of flood water is overtopping the reservoirs at Forest Rd,  N17 9NH.
     <br><br>
@@ -13400,7 +13355,7 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
 
  
 
-           <!--<div>
+           <div>
       <p class="govuk-!-margin-right-2 area-list"><strong>Area:</strong></p>
       <ul class="area-list">
         
@@ -13412,24 +13367,152 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
           </li>
         
       </ul>
-    </div>-->
+    </div>
 
-<!--<div class="area-list-map-details">
+<div class="area-list-map-details">
     
       
       <div class="govuk-!-margin-bottom-3"><p class="govuk-!-margin-right-2 area-list"><strong>Radius area:</strong> 3km</p></div>
 
-      </div>-->
+        
+<!--<div class="govuk-!-margin-bottom-3"><p class="govuk-!-margin-right-2 area-list"><strong>Map:</strong></p></div>-->
+        
+      <div class="govuk-details__text">
+
+<div.ex2>
+  <iframe style="border: 0px solid rgba(0, 0, 0, 0); overflow: hidden;" width="708" height="277" src="https://admin-ui-rpan.onrender.com/public/images/walthamstow-708.png"></iframe>
+       </div.ex2> 
+         
+       </div>
+        
   
+        
+        <div class="govuk-!-margin-bottom-3">
+        <p id="area-list-map__description" class="govuk-visually-hidden">Use the arrow keys to move the map. Use the buttons to zoom the map in or out</p>
+        <p class="area-list-key area-list-key--certain">
+          <svg class="area-list-key__icon" width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>
+            <polygon points="25 5, 45 25, 25 45, 5 25" stroke="#0B0B0C" stroke-width="2" fill="#96C6E2"></polygon>
+          </svg>
+          <span class="govuk-visually-hidden">
+            An area of 2 square miles&nbsp;
+          </span>
+          Will get
+          <span class="govuk-visually-hidden">
+            the
+          </span>
+          alert
+        </p>
+        <p class="area-list-key area-list-key--likely">
+
+          <svg class="area-list-key__icon" width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>
+            <polygon points="25 5, 45 25, 25 45, 5 25" stroke="#1d70b8" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="4,7.5,5,7.5,8,8,5,8,7.5,8,5,8,7,8,5,8,4" fill="#5694ca" fill-opacity="0.15"></polygon>
+          </svg>
+
+          <span class="govuk-visually-hidden">
+            An extra area of 2,000 square miles is&nbsp;
+          </span>
+          Likely to get
+          <span class="govuk-visually-hidden">
+            the
+          </span>
+          alert
+        </p>
+        <p class="area-list-key area-list-key--phone-estimate">
+          
+           100,000 to 120,000 phones
+          
+        </p></div>
+
+      
+      </div>
+          
+          
+   <!--<div class="area-list-map-details">
+    
+      <details class="govuk-details" data-module="govuk-details" open="">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Map of area
+        </span>
+      </summary>
+
+        <p id="area-radius" style="margin-top: 24px;" class=".area-list-key--radius-estimate">Radius area of 8km</p>
+        
+      <div class="govuk-details__text">
+
+<div class="bg-image">
+  <iframe style="border: 0px solid rgba(0, 0, 0, 0); overflow: hidden;" width="988" height="542" src="https://admin-ui-rpan.onrender.com/public/images/walthamstow.png"></iframe>
+        </div>
+        </div>
+        
+  
+
+        <div>
+   
+    
+         
+       </div>
+        
+  
+        
+        <div class="govuk-!-margin-bottom-3">
+        <p id="area-list-map__description" class="govuk-visually-hidden">Use the arrow keys to move the map. Use the buttons to zoom the map in or out</p>
+        <p class="area-list-key area-list-key--certain">
+          <svg class="area-list-key__icon" width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>
+            <polygon points="25 5, 45 25, 25 45, 5 25" stroke="#0B0B0C" stroke-width="2" fill="#96C6E2"></polygon>
+          </svg>
+          <span class="govuk-visually-hidden">
+            An area of 2 square miles&nbsp;
+          </span>
+          Will get
+          <span class="govuk-visually-hidden">
+            the
+          </span>
+          alert
+        </p>
+        <p class="area-list-key area-list-key--likely">
+
+          <svg class="area-list-key__icon" width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"></rect>
+            <polygon points="25 5, 45 25, 25 45, 5 25" stroke="#1d70b8" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="4,7.5,5,7.5,8,8,5,8,7.5,8,5,8,7,8,5,8,4" fill="#5694ca" fill-opacity="0.15"></polygon>
+          </svg>
+
+          <span class="govuk-visually-hidden">
+            An extra area of 2,000 square miles is&nbsp;
+          </span>
+          Likely to get
+          <span class="govuk-visually-hidden">
+            the
+          </span>
+          alert
+        </p>
+        <p class="area-list-key area-list-key--phone-estimate">
+          
+           18,000 to 22,000 phones
+          
+        </p></div>
+
+      
+      </div>-->
 
 
           
     </details>
 
-            <a href="submit-for-approval-user1-other" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+            <a href="submit-for-approval-user1.html" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
             Submit for approval
           </a>
     
+    <!--<div class="govuk-!-margin-bottom-3">
+      <p class="govuk-!-margin-right-2 area-list">Created by Katia lacovozzi and approved by Mehmet Omer</p>
+    </div>-->
+         <!--<div class="govuk-!-margin-bottom-3">
+      <p class="govuk-!-margin-right-2 area-list">Broadcasting will stop today at 9:48am</p>
+    </div>
+      </div>-->
         </main>
       
     </div>
@@ -13495,6 +13578,11 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
                   </li>
 
                 
+  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="check-answers-edit">
+                      Check answers
+                    </a>
+                  </li>
 
 
                 
