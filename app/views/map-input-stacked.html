@@ -292,14 +292,13 @@ a.right.govuk-button.page-footer__button {
                 <!--<a href="service-ui-user-1" class="govuk-back-link">Home</a>-->
 <nav class="navigation" aria-label="Service">
   <ul>
-      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home </a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home</a></li>
   </ul>
 </nav>
                 <a href="lib-three-radios" class="govuk-back-link">Back</a>
                 <!--<span class="govuk-caption-l">Step 3 of 6</span>-->
-                <h1 class="govuk-heading-l">Alert area</h1>
-<a href="libraries-mvp-1-2-order-user-1" class="govuk-back-link">Back
-</a>
+                <h1 class="govuk-heading-l">Choose a location to send the alert</h1>
+<!--<a href="libraries-mvp-1-2-order-user-1" class="govuk-back-link"></a>-->
 
 <main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
 
@@ -307,9 +306,9 @@ a.right.govuk-button.page-footer__button {
 
          <div class="govuk-form-group">
            <h1 class="govuk-label-wrapper">
-             <label class="govuk-label govuk-label--l" for="location">
+            <!--<label class="govuk-label govuk-label--l" for="location">
                Choose a location to send the alert
-             </label>
+             </label>-->
              </h1>
            <label class="govuk-label govuk-label--m" for="passport-number">
          Postcode
@@ -337,7 +336,7 @@ a.right.govuk-button.page-footer__button {
 </div>
 </div>
 
-<details class="govuk-details" closed="" open="">
+<details class="govuk-details" closed="" closed="">
 <summary class="govuk-details__summary">
  <span class="govuk-details__summary-text">
    Go
@@ -356,14 +355,14 @@ a.right.govuk-button.page-footer__button {
                             </div>
                             <div id="input-fields">
                                 <div id="postcode-search">
-                                    <input class="govuk-input govuk-input--width-30" id="postcode" name="addressPostcode" type="search" autocomplete="postal-code" placeholder="Postcode">
+                                    <input class="govuk-input govuk-input--width-30" id="postcode" name="addressPostcode" type="search" autocomplete="postal-code" placeholder="N17 9NH">
 
                                     <button type="submit-postcode" class="govuk-button govuk-button--secondary" id="submit-postcode" data-module="govuk-button">
                                         Search
                                     </button>
                                 </div>
                                 <div id="radius-add">
-                                    <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="radius" name="radius" type="number" spellcheck="false" placeholder="Radius">
+                                    <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="radius" name="radius" type="number" spellcheck="false" placeholder="3">
                                         <div class="govuk-input__suffix" aria-hidden="true">km</div>
                                     </div>
                                     <button type="submit-radius" class="govuk-button govuk-button--secondary" data-module="govuk-button" id="submit-radius">
