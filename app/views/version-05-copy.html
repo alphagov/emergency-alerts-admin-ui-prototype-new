@@ -37,11 +37,7 @@
 
         <style>
 
-        html {
-    overflow: hidden!important;
-    overflow-y: hidden!important;
-    overflow-x: hidden!important;
-}
+        
             
 #postcode-search {
     margin-right: 9%;
@@ -145,7 +141,7 @@
     }
   </style><link class="tempLink" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family="></head>
 
-<body class="govuk-template__body  js-enabled js-enabled">
+<body class="govuk-template__body  js-enabled">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     <header class="govuk-header " role="banner" data-module="govuk-header">
         <div class="govuk-header__container govuk-width-container">
@@ -245,7 +241,7 @@
 </nav>
                 <a href="lib-three-radios" class="govuk-back-link">Back</a>
                 <!--<span class="govuk-caption-l">Step 3 of 6</span>-->
-                <h1 class="govuk-heading-l">Alert area</h1>
+                <h1 class="govuk-heading-l">Choose alert area</h1>
                 <main class="govuk-main-wrapper">
                     <div class="govuk-grid-row">
                         <div class="govuk-grid-column-full">
@@ -261,14 +257,14 @@
     width: 1960px;
 ">
                                 <div id="postcode-search">
-                                    <input class="govuk-input govuk-input--width-30" id="postcode" name="addressPostcode" type="search" autocomplete="postal-code" placeholder="N17 9NH">
+                                    <input class="govuk-input govuk-input--width-30" id="postcode" name="addressPostcode" type="search" autocomplete="postal-code" placeholder="Postcode">
 
                                     <button type="submit-postcode" class="govuk-button govuk-button--secondary" id="submit-postcode" data-module="govuk-button">
                                         Search
                                     </button>
                                 </div>
                                 <div id="radius-add">
-                                    <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="radius" name="radius" type="number" spellcheck="false" placeholder="3">
+                                    <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="radius" name="radius" type="number" spellcheck="false" placeholder="Radius">
                                         <div class="govuk-input__suffix" aria-hidden="true">km</div>
                                     </div>
                                     <button type="submit-radius" class="govuk-button govuk-button--secondary" data-module="govuk-button" id="submit-radius">
@@ -289,14 +285,8 @@
 
                             </div>
 
-                            <div>
-
-
-<iframe style="border: 0px solid rgba(0, 0, 0, 0);" width="966" height="377" src="https://admin-ui-rpan.onrender.com/public/images/walthamstow-708.png"></iframe>
-
-
-    
-</div>
+                            <div id="map" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;">
+                            <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, -120px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(-159px, -44px, 0px) scale(1.30753);"><img alt="" src="https://tile.openstreetmap.org/5/15/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(302px, -70px, 0px); opacity: 1;"><img alt="" src="https://tile.openstreetmap.org/5/15/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(302px, 186px, 0px); opacity: 1;"><img alt="" src="https://tile.openstreetmap.org/5/14/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(46px, -70px, 0px); opacity: 1;"><img alt="" src="https://tile.openstreetmap.org/5/16/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(558px, -70px, 0px); opacity: 1;"><img alt="" src="https://tile.openstreetmap.org/5/14/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(46px, 186px, 0px); opacity: 1;"><img alt="" src="https://tile.openstreetmap.org/5/16/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(558px, 186px, 0px); opacity: 1;"><img alt="" src="https://tile.openstreetmap.org/5/17/9.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(814px, -70px, 0px); opacity: 1;"><img alt="" src="https://tile.openstreetmap.org/5/17/10.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(814px, 186px, 0px); opacity: 1;"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(-60px, 18px, 0px) scale(0.653765);"></div></div></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(5265px, 3349.5px, 0px) scale(20.9205);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div><div class="leaflet-control-fullscreen leaflet-bar leaflet-control"><a class="leaflet-control-fullscreen-button leaflet-bar-part" href="#" title="View Fullscreen"></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"><div class="leaflet-control-scale leaflet-control"><div class="leaflet-control-scale-line" style="width: 95px;">200 km</div><div class="leaflet-control-scale-line" style="width: 76px;">100 mi</div></div></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a> <span aria-hidden="true">|</span> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div></div></div></div>
 
                             <p id="area-radius" style="margin-top: 24px;" class=".area-list-key--radius-estimate"></p>
 
@@ -415,7 +405,6 @@
       </div>
     </footer>
         
-
 
 
 </body></html>
