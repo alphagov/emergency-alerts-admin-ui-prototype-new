@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="govuk-template"><head>
-    
-
-    
+<html lang="en" class="govuk-template"><head>    
         <meta charset="utf-8">
         <title> Map – Emergency Alerts – GOV.UK Alerts</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -37,40 +34,48 @@
 
         <style>
 
-   body, html {
-  height: 100%;
+                
+                #iframe {
+    width: 960px!important;
+    background-image: url(https://admin-ui-rpan.onrender.com/public/images/walthamstow-708.png);
+    height: 350px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("https://admin-ui-rpan.onrender.com/public/images/walthamstow-708.png");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+                
+                .iframe {
+    width: 960px!important;
+    background-image: url(https://admin-ui-rpan.onrender.com/public/images/walthamstow-708.png);
+    height: 350px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-            
-            
-            
-
-            button#submit-postcode {
-    display: none;
-}
         
-            
-#postcode-search {
-    margin-right: 8%;
+
+                iframe {
+    width: 960px!important;
+    background-image: url(https://admin-ui-rpan.onrender.com/public/images/walthamstow-708.png);
+    height: 350px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-            div#radius-add {
-    margin-right: 208px;
+
+                
+#postcode-search {
+    margin-right: 9%;
+}
+
+   div#radius-add {
+    margin-right: 94px;
     margin-left: -86px;
 }
+
             
 
             
@@ -118,7 +123,11 @@
                 text-align: -webkit-right !important;
             }
 
-        
+            #map {
+                height: 70vh;
+                width: 100%;
+            }
+
             #input-fields,
             #postcode-search,
             #radius-add {
@@ -148,7 +157,6 @@
                 border: none !important;
             }
         </style>
-    
         <meta name="robots" content="noindex">
         <meta name="google-site-verification" content="niWnSqImOWz6mVQTYqNb5tFK8HaKSB4b3ED4Z9gtUQ0">
         <meta name="format-detection" content="telephone=no">
@@ -161,7 +169,7 @@
     }
   </style><link class="tempLink" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family="></head>
 
-<body class="govuk-template__body  js-enabled">
+<body class="govuk-template__body  js-enabled js-enabled js-enabled">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     <header class="govuk-header " role="banner" data-module="govuk-header">
         <div class="govuk-header__container govuk-width-container">
@@ -261,7 +269,7 @@
 </nav>
                 <a href="lib-three-radios" class="govuk-back-link">Back</a>
                 <!--<span class="govuk-caption-l">Step 3 of 6</span>-->
-                <h1 class="govuk-heading-l">Change alert area</h1>
+                <h1 class="govuk-heading-l">Alert area</h1>
                 <main class="govuk-main-wrapper">
                     <div class="govuk-grid-row">
                         <div class="govuk-grid-column-full">
@@ -292,7 +300,7 @@
                                     </button>
                                 </div>
 
-                                <div id="postcode-search">
+                                <div class="right">
    
     <a href="preview-alert-user1" button="" class=" right govuk-button" data-module="govuk-button">
         Preview this alert
@@ -301,12 +309,18 @@
 
 </div>
 
-                                <div class="bg"></div>
                                 
 
                             </div>
 
-          <div class="bg"></div>             
+                            <div>
+
+
+<iframe style="border: 0px solid rgba(0, 0, 0, 0);width: 1200px;" width="" height="" src="" width:=""></iframe>
+
+
+    
+</div>
 
                             <p id="area-radius" style="margin-top: 24px;" class=".area-list-key--radius-estimate"></p>
 
@@ -425,6 +439,8 @@
       </div>
     </footer>
         
+
+
 
 
 </body></html>
