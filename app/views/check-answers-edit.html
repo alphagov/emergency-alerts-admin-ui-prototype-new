@@ -29,13 +29,6 @@
   
    <style>
 
-.govuk-summary-list__row-remove
-
-    border-bottom: 1px solid #b1b4b6;
-display: table-row;
-}
-
-
 a.govuk-link.inactive {
     color: #b1b4b6!important;
 }
@@ -12952,6 +12945,18 @@ div#area-list-mp {
     color: #ffffff;
     box-shadow: 0 -3px 0 0 #d4351c;
 }
+
+       .govuk-summary-list__row-remove {
+border-bottom: 0px solid #b1b4b6;
+display: table-row;
+display: table;
+width: 100%;
+table-layout: fixed;
+border-collapse: collapse;
+}
+
+
+       
      
 </style>
   
@@ -13100,7 +13105,7 @@ div#area-list-mp {
         
         <h2 class="govuk-heading-m">Preview alert</h2>
 <dl class="govuk-summary-list govuk-!-margin-bottom-2">
-          <div class="govuk-summary-list__row govuk-summary-list__row-remove">
+          <div class="govuk-summary-list__row-remove">
             <dt class="govuk-summary-list__key">
               <strong>Alert message:</strong>
             </dt>
