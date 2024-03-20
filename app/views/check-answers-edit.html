@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="govuk-template "><head>
+<html lang="en" class="govuk-template"><head>
     <meta charset="utf-8">
     <title>
    Check alert – GOV.UK Emergency Alerts
@@ -29,6 +29,21 @@
   
    <style>
 
+.govuk-summary-list__row-remove
+
+    border-bottom: 1px solid #b1b4b6;
+display: table-row;
+}
+
+
+a.govuk-link.inactive {
+    color: #b1b4b6!important;
+}
+
+.govuk-link:active {
+    color: #1d70b8!important;
+}
+       
   .govuk-link:visited {
     color: #1d70b8!important;
 }
@@ -12945,9 +12960,15 @@ div#area-list-mp {
     <meta name="format-detection" content="telephone=no">
   
     <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
-  </head>
+  <style id="font-changer-styles">
+    * {
+        font-family:  !important;
+        
+        
+    }
+  </style><link class="tempLink" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family="></head>
   
-  <body class="govuk-template__body  js-enabled js-enabled">
+  <body class="govuk-template__body  js-enabled js-enabled js-enabled">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     
   <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -13046,7 +13067,7 @@ div#area-list-mp {
   </span>
   </div>
 
-  <!--<a href="/accounts" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch">Switch service</a>-->
+  <a href="/accounts" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch">Switch service</a>
 </div>
 
     <div class="govuk-grid-row govuk-!-padding-bottom-12">
@@ -13054,7 +13075,7 @@ div#area-list-mp {
   <div class="govuk-grid-column-one-quarter">
     <nav class="navigation" aria-label="Service">
   <ul>
-      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home</a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home </a></li>
   </ul>
 </nav>
   </div>
@@ -13069,17 +13090,30 @@ div#area-list-mp {
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds-from-deskto">
         <h1 class="govuk-heading-l">Walthamstow Reservoirs 28022024</h1>
-          <div class="govuk-!-margin-bottom-3">
+ <div class="govuk-!-margin-bottom-3">
       <p class="govuk-!-margin-right-2 area-list"><strong>Request for edit by:</strong> Mehmet Omer</p>
     </div>
           <div class="govuk-!-margin-bottom-3">
-      <p class="govuk-!-margin-right-2 area-list"><strong>Reason for rewwork:</strong> Alert message, spelling mistake severe flaoding should be flooding.</p>
+      <p class="govuk-!-margin-right-2 area-list"><strong>Reason for rework:</strong> Alert message, spelling mistake severe flaoding should be flooding.</p>
     </div>
           <hr>
         
-        <h2 class="govuk-heading-m">Alert message</h2>
+        <h2 class="govuk-heading-m">Preview alert</h2>
+<dl class="govuk-summary-list govuk-!-margin-bottom-2">
+          <div class="govuk-summary-list__row-remove">
+            <dt class="govuk-summary-list__key">
+              <strong>Alert message:</strong>
+            </dt>
+            <dd class="govuk-summary-list__value">
+              
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link active" href="message-edit">Change<span class="govuk-visually-hidden">Change</span></a>
+            </dd>
+          </div>
+        </dl>
         
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <dl class="govuk-summary-list govuk-!-margin-bottom-6">
           <div class="govuk-summary-list__row">
 
             <div class="broadcast-message-wrapper">
@@ -13109,34 +13143,18 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
             
             
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="message-edit">Change<span class="govuk-visually-hidden"> name</span></a>
+              
             </dd>
           </div>
         </dl>
 
         
-        <h2 class="govuk-heading-m">Length of time alert will run</h2>
-        <div id="changed-name-hint" class="govuk-hint govuk-!-margin-bottom-3">
-          When this alert is approved it will be broadcast for 22 hours before it automatically stops. You can stop the broadcast at any time.
-          </div>
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-          <div class="govuk-summary-list__row">
-          
-            <dt class="govuk-summary-list__key">
-             <strong>Duration:</strong>
-            </dt>
-            <dd class="govuk-summary-list__value">
-              22 hours
-            </dd>
-            <!--<p class="govuk-!-margin-right-2 area-list"><strong>Duration:</strong> 22 hours</p>-->
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden">Duration</span></a>
-            </dd>
-          </div>
-        </dl>
+        
+        
+        
 
         <h2 class="govuk-heading-m">Alert created by</h2>
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <dl class="govuk-summary-list govuk-!-margin-bottom-6">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               <strong>Created by:</strong>
@@ -13151,7 +13169,7 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
         </dl>
 
          <h2 class="govuk-heading-m">Alert area</h2>
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <dl class="govuk-summary-list govuk-!-margin-bottom-6">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               <strong>Area:</strong>
@@ -13175,8 +13193,8 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
         </dl>
 
 
-           <h2 class="govuk-heading-m">Radius area</h2>
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+           <!--<h2 class="govuk-heading-m">Radius area</h2>-->
+        <!--<dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               <strong>Radius area</strong>
@@ -13188,12 +13206,12 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
               <a class="govuk-link" href="map">Change<span class="govuk-visually-hidden">Change</span></a>
             </dd>
           </div>
-        </dl>
+        </dl>-->
 
       
          <h2 class="govuk-heading-m">Map</h2>
 
-          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <dl class="govuk-summary-list govuk-!-margin-bottom-6">
 <div class="govuk-summary-list__row">
       
 
@@ -13431,6 +13449,7 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
   <!--<![endif]-->
 
   
+
 
 
 </body></html>
