@@ -36,11 +36,11 @@
   <style>
 
     .live-broadcast {
-    background: #f499be!important;
-    color: #ffffff;
-    box-shadow: 0 -3px 0 0 #f499be;
+    color: #d4351c!important;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
 }
-
     
 
     .govuk-tag.broadcast-tag {
@@ -81,9 +81,7 @@
     white-space: nowrap;
 }
       .live-broadcast {
-background: #f499be!important;
-    color: #ffffff;
-    box-shadow: 0 -3px 0 0 #f499be;
+    color: #d4351c;
     font-weight: 700;
     position: relative;
     display: inline-block;
@@ -98,7 +96,12 @@ background: #f499be!important;
     margin-right: 10px!important;
 }
 
-
+.live-broadcast {
+    color: #d4351c;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
 .file-list--sectioned {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -134,11 +137,10 @@ nav.govuk-header__navigation {
     float: right;
 }
 
-
-.navigation-service-type--live {
-    background: #f499be!important;
+    .navigation-service-type--live {
+    background: #d4351c;
     color: #ffffff;
-    box-shadow: 0 -3px 0 0 #f499be;
+    box-shadow: 0 -3px 0 0 #d4351c;
 }
 
     a.govuk-back-link {
@@ -311,7 +313,7 @@ nav.govuk-header__navigation {
     
   </div>
 
-  <!--<a href="/accounts" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch">Switch service</a>-->
+  <a href="/accounts" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch">Switch service</a>
 </div>
 
     <div class="govuk-grid-row govuk-!-padding-bottom-12">
@@ -354,9 +356,9 @@ nav.govuk-header__navigation {
           
 
   <h1 class="heading-medium">Current alerts</h1>
-          <!--<div id="changed-name-hint" class="govuk-hint">
+          <div id="changed-name-hint" class="govuk-hint">
           Alerts that are currently being broadcast or waiting for approval
-          </div>-->
+          </div>
 
   
   
@@ -377,11 +379,11 @@ nav.govuk-header__navigation {
       <h2>
         <a class="file-list-filename-large govuk-link govuk-link--no-visited-state" href="live-alert-preview-user1.html">Walthamstow Reservoirs</a>
       </h2>
-broadcast-tag
+
       <p class="govuk-body live-broadcast file-list-status">
           
   <strong class="govuk-tag govuk-!-margin-right-2 broadcast-tag">
-  Service live
+  live
 </strong>
 
 
