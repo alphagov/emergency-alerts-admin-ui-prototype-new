@@ -169,6 +169,292 @@
 </div>
 </div>
 </header>
+
+
+
+
+   <div class="govuk-width-container">
+    
+  <div class="navigation-service">
+    
+      
+    
+    
+    <div class="navigation-service-name govuk-!-font-weight-bold">
+      Emergency Alerts
+      
+        
+    
+    
+      <span class="navigation-service-type navigation-service-type--live">Service live
+    
+    </span>
+  
+      
+    </div>
+
+    <!--<a href="https://admin-ui-rpan.onrender.com/service-ui-user-1" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch" style="
+    margin-right: 155px;
+">Home</a>-->
+    
+    <!--<a href="/accounts" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline navigation-service-switch">Switch service</a>-->
+  </div>
+  
+      <div class="govuk-grid-row govuk-!-padding-bottom-12">
+
+
+       
+  <div class="govuk-grid-column-one-quarter">
+    <nav class="navigation" aria-label="Service">
+  <ul>
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home </a></li>
+  </ul>
+</nav>
+  </div>
+
+      
+        
+        
+          <!--<div class="govuk-grid-column-one-quarter">
+        
+  <nav class="navigation" aria-label="Service">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+  </nav>
+  
+          </div>-->
+        
+
+<div class="govuk-grid-column-three-quarters">
+
+  <!--<a href="service-ui-user-1" class="govuk-back-link">Back
+  </a>-->
+
+
+      
+        <!--<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="service-ui-user-1">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link govuk-breadcrumbs__navigation-item--active" href="new-alert-message-user-1">Message</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Travel abroad</a>
+    </li>
+  </ol>
+</div>-->
+
+  <!--<a href="service-ui-user-1" class="govuk-back-link">Home
+  </a>-->
+  
+  <a href="service-ui-user-1" class="govuk-back-link">Back
+  </a>
+
+<!--div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="service-ui-user-1">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Travel abroad</a>
+    </li>
+  </ol>
+</div>-->
+
+   <!--<a href="service-ui-user-1" class="govuk-back-link">Back
+  </a>-->
+  
+        
+        <main class="govuk-main-wrapper column-main govuk-!-padding-top-0 govuk-!-padding-bottom-0" id="main-content" role="main">
+        
+          
+
+  
+
+          
+
+  
+  
+
+
+  
+
+  <!--<h1 class="heading-large" id="page-header">New alert message</h1>-->
+
+<!--<span class="govuk-caption-l">Step 1 of 6</span>-->
+<h1 class="govuk-heading-l">
+  New alert message
+</h1>
+
+<form action="/form-handler" method="post" novalidate="">
+      
+
+<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+  <div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="with-hint">
+      Can you provide more detail?
+    </label>
+  </h1>
+  <div id="with-hint-hint" class="govuk-hint">
+    Do not include personal or financial information like your National Insurance number or credit card details.
+  </div>
+  <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea><div id="with-hint-info" class="govuk-hint govuk-character-count__message govuk-visually-hidden">
+    You can enter up to 200 characters
+  </div><div class="govuk-hint govuk-character-count__message govuk-character-count__status" aria-hidden="true">You have 197 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 197 characters remaining</div>
+</div>
+
+  
+</div>
+
+
+  </form>
+
+  
+
+  
+  <form method="post" autocomplete="off" novalidate="">
+    
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+
+
+<div class="govuk-form-group">
+  <!--<label class="govuk-label" for="name">
+    Reference
+  </label>-->
+
+  <h4 id="text-inputs-with-a-prefix">Reference</h4>
+  
+  <div id="name-hint" class="govuk-hint">
+    Write the reference as YYYYMMDD followed by the name of the incident. This reference will not be seen by the public.
+  </div>
+
+<input class="govuk-input govuk-!-width-full" id="name" name="name" type="text" aria-describedby="name-hint">
+</div>
+
+<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="1395">
+  <div class="govuk-form-group">
+    <h1 class="govuk-label-wrapper">
+      <label class="govuk-label govuk-label--l" for="with-hint">
+        Can you provide more detail?
+      </label>
+    </h1>
+    <div id="with-hint-hint" class="govuk-hint">
+      Do not include personal or financial information like your National Insurance number or credit card details.
+    </div>
+    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+  </div>
+  <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+   You have 1,395 characters remaining You can enter up to 200 characters
+  </div>
+</div>
+
+        
+
+        
+  <div class="form-group govuk-!-margin-bottom-2" data-notify-module="">
+    <h4 id="text-inputs-with-a-prefix">Alert message</h4>
+    <div id="name-hint" class="govuk-hint">
+    Paste (Ctrl+V) the alert message from your request template.
+  </div>
+  
+    <div class="textbox-highlight-wrapper"><div class="textbox-highlight-wrapper"><textarea class="form-control form-control-1-1 textbox-highlight-textbox" data-highlight-placeholders="false" data-notify-module="enhanced-textbox" id="template_content" name="template_content" rows="5" aria-describedby="update-status update-status" style="height: 185px;"></textarea><div class="textbox-highlight-background" aria-hidden="true" style="border-width: 2px; width: 465px;">fff</div></div>
+        <div class="textbox-highlight-background" aria-hidden="true" style="border-width: 2px; width: 452.99px;"></div></div>
+    
+    
+  </div>
+
+      </div>
+
+      
+      <div class="govuk-grid-column-full">
+        <div class="template-content-count">
+          <div data-notify-module="update-status" data-target="template_content" data-updates-url="/services/b81242cc-5756-4a88-a0aa-afa6411c28e2/templates/count-broadcast-length" aria-live="polite" id="update-status"><span>
+  You have 1,395 characters remaining
+</span></div>
+        </div>
+
+        
+        
+  <div class="page-footer">
+
+
+    
+      
+
+<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+  <div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="with-hint">
+      Can you provide more detail?
+    </label>
+  </h1>
+  <div id="with-hint-hint" class="govuk-hint">
+    Do not include personal or financial information like your National Insurance number or credit card details.
+  </div>
+  <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea><div id="with-hint-info" class="govuk-hint govuk-character-count__message govuk-visually-hidden">
+    You can enter up to 200 characters
+  </div><div class="govuk-hint govuk-character-count__message govuk-character-count__status" aria-hidden="true">You have 197 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 197 characters remaining</div>
+</div>
+
+  
+</div>
+
+
+  
+
+    
+    
+      <input type="hidden" name="csrf_token" value="ImFmZDI4NmQxYmMxNGI0ODRmYzQ4MzQ4YThjYTliMDA0ZTZjYzljY2Ui.ZSPM6Q.5O3-4oH9eM92MxT-OzY4ghCbNSA">
+
+       <a href="lib-three-radios.html" role="button" draggable="false" class="govuk-button page-footer__button" data-module="govuk-button">
+  Continue
+ </a>
+      
+      
+    
+  <!--<a href="libraries-mvp-1-2-order-user-1.html" role="button" draggable="false" class="govuk-button page-footer__button" data-module="govuk-button">
+  Continue
+ </a>-->
+
+
+
+
+    
+    
+    
+
+  </div>
+
+      </div>
+    </div>
+  
+  </form>
+
+
+
+        
+        </main>
+      </div>
+
+        
+      </div>
+    </div>
+
+
+
    
 
   <!-- Disable browser validation for any examples that include form elements -->
