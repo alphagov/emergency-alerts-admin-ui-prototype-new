@@ -23,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   L.control.scale().addTo(map);
   map.addControl(new L.Control.Fullscreen());
+  map.addControl(new L.Control.MiniMap(
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+      toggleDisplay: true,
+      position: 'topright',
+      zoomLevelOffset:10,
+    })
+  ))
 
   var marker;
   var radius_circle;
