@@ -270,11 +270,16 @@ a.govuk-back-link {
 <nav class="navigation" aria-label="Service">
   <ul>
   
-     <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline selected" href="home">Home</a></li>
-    <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="service-ui-user-1">Current alerts</a></li>
-    <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="service-ui-user-1">Approval needed</a></li>
-    <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="return-for-edit">Amends needed</a></li>
+     <!--<li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline selected" href="home">Home</a></li>-->
+    
+    <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline selected" href="service-ui-user-1">Current alerts</a></li>
+    
+    <!--<li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="service-ui-user-1">Approval needed</a></li>-->
+    
+    <!--<li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="return-for-edit">Amends needed</a></li>-->
+    
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="https://admin-ui-rpan.onrender.com/past-alerts-new">Past alerts</a></li>
+    
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="/services/9f8e8a80-488c-42d9-90c3-767eaea1e050/rejected-alerts">Rejected alerts</a></li>
     
     <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="template">Templates</a></li>
@@ -338,6 +343,21 @@ a.govuk-back-link {
  <thead class="govuk-table__head"><tr class="govuk-table__row"><th class="govuk-table__header" scope="col">Alert name</th>
 
    <th class="govuk-table__header govuk-table__header--numeric" scope="col">Status</th></tr></thead>
+
+   <!--Amends needed - AMENDS NEEDED-->
+   
+        <tbody class="govuk-table__body">
+     <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Willien Lake 28022024</a></td>
+     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--orange">Amends needed</strong> 
+</div>
+     </td>
+   </tr>
+   </tbody>
+
+   
+
+<!--Current alert - LIVE-->
    
    <tbody class="govuk-table__body">
      <tr class="govuk-table__row">
@@ -350,7 +370,7 @@ a.govuk-back-link {
    </tr>
    </tbody>
 
-
+<!--Awaiting approval - APPROVAL NEEDED-->
        <tbody class="govuk-table__body">
      <tr class="govuk-table__row">
  <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Walthamstow Reservoirs 28022024</a></td>
@@ -361,14 +381,6 @@ a.govuk-back-link {
    </tbody>
 
 
-        <tbody class="govuk-table__body">
-     <tr class="govuk-table__row">
-        <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Willien Lake 28022024</a></td>
-     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--orange">Amends needed</strong> 
-</div>
-     </td>
-   </tr>
-   </tbody>
 
        
  </table>
