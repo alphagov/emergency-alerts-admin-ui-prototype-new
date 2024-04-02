@@ -338,24 +338,52 @@ a.govuk-back-link {
 
  <table class="govuk-table">
 
-  <!--<caption class="govuk-table__caption govuk-table__caption--m">Your alerts</caption>-->
+  <caption class="govuk-table__caption govuk-table__caption--m">Action required</caption>
    
  <thead class="govuk-table__head"><tr class="govuk-table__row"><th class="govuk-table__header" scope="col">Alert name</th>
 
    <th class="govuk-table__header govuk-table__header--numeric" scope="col">Status</th></tr></thead>
+
+   <!--Awaiting approval - APPROVAL NEEDED-->
+       <tbody class="govuk-table__body">
+     <tr class="govuk-table__row">
+ <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Walthamstow Reservoirs 28022024</a></td>
+     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--brand">Awaiting approval</strong>   
+</div>
+     </td>
+   </tr>
+   </tbody>
+
 
    <!--Amends needed - AMENDS NEEDED-->
    
         <tbody class="govuk-table__body">
      <tr class="govuk-table__row">
         <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Willien Lake 28022024</a></td>
-     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--orange">Amends needed</strong> 
+     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--brand">Amends needed</strong> 
 </div>
      </td>
    </tr>
    </tbody>
+       
+ </table>
+  
 
+
+
+
+  <hr>
+  
+  <!--<a class="govuk-button govuk-button--start" data-module="govuk-button" draggable="false" role="button" href="/forms/new">Create an alert<svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a>-->
+
+ <table class="govuk-table">
+
+  <caption class="govuk-table__caption govuk-table__caption--m">Informationm</caption>
    
+ <thead class="govuk-table__head"><tr class="govuk-table__row"><th class="govuk-table__header" scope="col">Alert name</th>
+
+   <th class="govuk-table__header govuk-table__header--numeric" scope="col">Status</th></tr></thead>
+
 
 <!--Current alert - LIVE-->
    
@@ -363,29 +391,17 @@ a.govuk-back-link {
      <tr class="govuk-table__row">
      
      <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Billing Aquadrome 27022024</a></td>
-     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--red">Current alert</strong>
+     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--brand">Current alert</strong>
       
 </div>
      </td>
    </tr>
    </tbody>
-
-<!--Awaiting approval - APPROVAL NEEDED-->
-       <tbody class="govuk-table__body">
-     <tr class="govuk-table__row">
- <td class="govuk-table__cell"><a class="govuk-link" href="/forms/2210">Walthamstow Reservoirs 28022024</a></td>
-     <td class="govuk-table__cell govuk-table__cell--numeric"><div class="app-form-states"><strong class="govuk-tag govuk-tag--green">Awaiting approval</strong>   
-</div>
-     </td>
-   </tr>
-   </tbody>
-
-
-
-       
+     
  </table>
-  
 
+
+  
   </div>
 
 
