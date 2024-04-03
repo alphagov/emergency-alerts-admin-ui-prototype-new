@@ -157,7 +157,13 @@ nav.govuk-header__navigation {
     background-color: #d4351c!important;
 }
     
-    
+  p.govuk-body.live-broadcast.file-list-status {
+    margin-top: 20px;
+}
+
+  p.govuk-body.live-broadcast.file-list-status {
+    color: #00703c !important;
+}  
     
   </style>
   
@@ -326,7 +332,7 @@ nav.govuk-header__navigation {
   <ul>
 
   <!--<li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="home-new-live">Home</a></li>-->
-      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline  selected" href="continue-CA222PA">Current alerts</a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline  selected" href="continue-CA222PA">Actions</a></li>
       <!--<li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="continue-CA222PA">Returned for edit</a></li>-->
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="past-alerts-new">Past alerts</a></li>
       <li><a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="rejected-alerts">Rejected alerts</a></li>
@@ -357,7 +363,7 @@ nav.govuk-header__navigation {
 
           
 
-  <h1 class="heading-medium">Current alerts</h1>
+  <h1 class="heading-medium">Actions</h1>
           <!--<div id="changed-name-hint" class="govuk-hint">
           Alerts that are currently being broadcast or waiting for approval</div>-->
 
@@ -380,7 +386,16 @@ nav.govuk-header__navigation {
       <h2>
         <a class="file-list-filename-large govuk-link govuk-link--no-visited-state" href="start-broadcasting-now">Walthamstow Reservoirs 28022024</a>
       </h2>
+<p class="govuk-body live-broadcast file-list-status">
+          
+  <strong class="govuk-tag govuk-!-margin-right-2 broadcast-tag">
+  live
+</strong>
 
+
+          since today at 9:18am
+        </p>
+      
   
       
       <span class="file-list-hint-large govuk-!-margin-bottom-2">
@@ -418,28 +433,33 @@ If you have a copy of the booklet, 'What To Do In The Event of A Severe Flood’
       <div>
 
 
-         <!--<div class="govuk-!-margin-bottom-3">
+         <div class="govuk-!-margin-bottom-3">
        <span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
         <strong>Broadcast:</strong> Will stop tomorrow at 6:20am.
       </span>
-    </div>-->
+    </div>
 
-
-        <span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
-       <strong>Waiting for approval</strong>
+<!--<div class="govuk-!-margin-bottom-3">
+       <span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
+        <strong>Broadcast:</strong> Will stop today at 9:48am.
       </span>
+    </div>-->
+        
+        <!--<span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
+       <strong>Waiting for approval</strong>
+      </span>-->
         
 
- <!--<span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
+ <span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
         <strong>Duration:</strong> 22 hours
-      </span>-->
+      </span>
         
         <!--<span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
       <strong>Reason for rework:</strong> Alert message, spelling mistake severe flaoding
       </span>-->
 
           <span class="file-list-hint-large govuk-!-margin-bottom-2 paragraph">
-      <strong>Created by:</strong> Emma Chiswell.
+      <strong>Created by:</strong> Emma Chiswell and approved by Mehmet Omer.
       </span>
 
         <p class="govuk-!-margin-right-2 area-list">Area: </p>
