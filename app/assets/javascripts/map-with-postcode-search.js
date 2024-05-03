@@ -379,14 +379,14 @@ document.addEventListener("DOMContentLoaded", function () {
       map.removeLayer(radius_circle);
     }
     radius_circle = L.circle([lat, lng], radius, {
-     stroke: rgb(2, 1, 254);
-    stroke-opacity: 1;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-    fill-opacity: 0.3;
-    fill-rule: evenodd;
+      color: "rgb(0,0,0)",
+      opacity: "1",
+      weight: "2",
+      lineCap: "butt",
+      lineJoin: "round",
+      fillColor: "rgb(86, 148, 202)",
+      fillOpacity: "0.3",
+      fillRule: "evenodd",
     }).addTo(map);
     radius_circle.enableEdit();
   }
@@ -396,15 +396,15 @@ document.addEventListener("DOMContentLoaded", function () {
       map.removeLayer(bleed_circle);
     }
     bleed_circle = L.circle([lat, lng], radius * 1.2, {
-     stroke: rgb(2, 1, 254);
-    stroke-opacity: 1;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 4, 7.5, 5, 7.5, 8, 8, 5, 8, 7.5, 8, 5, 8, 7, 8, 5, 8, 4;
-    fill: none;
-    fill-opacity: 0.3;
-    fill-rule: evenodd;
+      color: "rgb(29, 112, 184)",
+      opacity: "1",
+      weight: "2",
+      lineCap: "butt",
+      lineJoin: "round",
+      dashArray: "6,7",
+      fillColor: "rgb(29, 112, 184)",
+      fillOpacity: "0.15",
+      fillRule: "evenodd",
     }).addTo(map);
   }
   // ----------------------------------------------------
